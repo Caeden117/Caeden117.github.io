@@ -14,3 +14,9 @@ body {
     text-align: center;
     text-shadow: 2px 2px 5px black;
 }
+
+.top {
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
