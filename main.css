@@ -12,11 +12,13 @@ body {
 
     font-family: Lato;
     text-align: center;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 1px 1px 2px black;
 }
 
 .top {
-    margin: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    padding: 5%;
+}
+
+#name {
+    color: rgb(0, 128, 0);
 }
