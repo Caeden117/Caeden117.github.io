@@ -59,7 +59,6 @@ p {
 .button {
     color: white;
     font-family: Lato;
-    text-shadow: 2px 2px 5px black;
     box-shadow: 2px 2px 5px black;
     background-color: rgb(75, 75, 75);
     border-radius: 10px;
