@@ -1,0 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(25, 25, 25);
+    user-select: none;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
