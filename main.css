@@ -1,24 +1,86 @@
-html {
+body, html {
+    height: 100%;
+    margin: 0;
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: rgb(200, 200, 200);
-    color: rgb(25, 25, 25);
-    user-select: none;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-
     font-family: Lato;
     text-align: center;
-    text-shadow: 1px 1px 2px black;
+}
+
+p {
+    text-shadow: none;
 }
 
 .top {
+    position: absolute;
+    top: 0%;
+    bottom: 50%;
+    left: 0px;
+    right: 0px;
     padding: 5%;
+    background-color: rgb(200, 200, 200);
+    color: rgb(25, 25, 25);
+}
+
+.bottom {
+    position: absolute;
+    top: 50%;
+    bottom: 0%;
+    left: 0px;
+    right: 0px;
+    padding: 5%;
+    background-color: rgb(64, 64, 64);
+    color: rgb(200, 200, 200);
 }
 
 #name {
     color: rgb(0, 128, 0);
+    font-size: 72px;
+    text-shadow: 1px 1px 2px black;
+}
+
+#subname {
+    font-size: 32px;
+    color: rgb(64, 64, 64);
+    letter-spacing: 2px;
+}
+
+#icon {
+    padding-right: 10px;
+}
+
+#header {
+    font-size: 64px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.button {
+    color: white;
+    font-family: Lato;
+    text-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px black;
+    background-color: rgb(75, 75, 75);
+    border-radius: 10px;
+    border: none;
+    padding: 15px 32px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button:active{
+    background-color: rgb(75, 75, 75);
+}
+
+.button:hover {
+    background-image: radial-gradient(circle, lime, rgb(75, 75, 75));
+    background-color: lime;
+    color: black;
+    border: 0px solid;
+    border-color: rgb(75, 75, 75);
+    border-radius: 0px;
 }
