@@ -3,7 +3,8 @@ html {
 }
 
 body {
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(200, 200, 200);
+    color: rgb(25, 25, 25);
     user-select: none;
     flex-direction: column;
     align-items: center; 
