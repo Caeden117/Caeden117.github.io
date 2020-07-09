@@ -8,4 +8,8 @@ body {
     flex-direction: column;
     align-items: center; 
     justify-content: center;
+
+    font-family: Lato;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
 }
