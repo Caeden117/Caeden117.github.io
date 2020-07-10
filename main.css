@@ -1,7 +1,6 @@
 body, html {
     height: 100%;
     margin: 0;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -34,27 +33,19 @@ body {
 
 #name {
     color: lime;
-    font-size: 4.5vmax;
+    font-size: 72px;
     text-shadow: 2px 2px 3px black;
-    padding: auto;
 }
 
 #subname {
-    font-size: 1.5vmax;
+    font-size: 32px;
     color: rgb(64, 64, 64);
     letter-spacing: 2px;
-    padding: auto;
 }
 
 #icon {
     padding-right: 10px;
     font-size: 24px;
-}
-
-#header {
-    font-size: 3.5vmax;
-    text-shadow: 1px 1px 2px black;
-    padding: auto;
 }
 
 #footer {
