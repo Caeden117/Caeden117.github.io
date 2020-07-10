@@ -7,9 +7,6 @@ body, html {
 body {
     font-family: Lato;
     text-align: center;
-}
-
-p {
     text-shadow: none;
 }
 
@@ -37,53 +34,66 @@ p {
 
 #name {
     color: lime;
-    font-size: 72px;
-    text-shadow: 1px 1px 2px black;
+    font-size: 4.5vmax;
+    text-shadow: 2px 2px 3px black;
+    padding: auto;
 }
 
 #subname {
-    font-size: 32px;
+    font-size: 1.5vmax;
     color: rgb(64, 64, 64);
     letter-spacing: 2px;
+    padding: auto;
 }
 
 #icon {
     padding-right: 10px;
+    font-size: 24px;
 }
 
 #header {
-    font-size: 64px;
+    font-size: 3.5vmax;
     text-shadow: 1px 1px 2px black;
+    padding: auto;
 }
 
 #footer {
-    padding: 5%;
+    position: absolute;
+    top: 85%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
 }
 
 .button {
     color: white;
-    font-family: Lato;
+    font-size: 24px;
+    letter-spacing: 1.5px;
     box-shadow: 2px 2px 5px black;
     background-color: rgb(75, 75, 75);
+    background-image: none;
     border-radius: 10px;
     border: none;
     padding: 15px 32px;
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 30px 20px 20px 20px;
     cursor: pointer;
     transition-duration: 0.4s;
 }
 
 .button:active{
-    background-color: rgb(75, 75, 75);
-}
-
-.button:hover {
     background-image: radial-gradient(circle, lime, rgb(75, 75, 75));
     background-color: lime;
     color: black;
-    border: 0px solid;
-    border-color: rgb(75, 75, 75);
+}
+
+.button:hover {
     border-radius: 0px;
+    text-shadow: 1px 1px 1px white, 1px -1px 1px white, -1px 1px 1px white, -1px -1px 1px white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
 }
