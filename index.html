@@ -2,10 +2,10 @@
 <html>
 	<head>
 		<title>Caeden Statia</title>
-		<link rel="icon" href="caeden.png">
-        <link rel="stylesheet" href="fontawesome-free-5.13.1-web/css/all.min.css" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="main.css">
+		<link rel="icon" href="caeden.png" />
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="main.css" />
+		<script src="https://kit.fontawesome.com/eb5efa23ff.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<!--Discord Embed Information-->
@@ -16,30 +16,190 @@
 		<meta property="og:image" content="https://caeden.dev/caeden.png" />
 		<!--Website-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
-		<div class="top">
-			<div class="container">
-				<h1 id="name">Caeden Statia</h1>
-			</div>
-			<div class="container">
-				<!--If I wanted to, I can make some JavaScript to make this subname pick from a randomized list of strings.-->
-				<!--But, eh, let's keep it simple for now.-->
-				<h2 id="subname"><i>Self-taught C# Developer</i></h2>
+
+		<!--Header-->
+		<div class="centered light row">
+			<h1 class="accent">Caeden Statia</h1>
+			<h3 id="consolas">Self-taught <span class="accent">C#</span> Developer</h3>
+
+			<div class="horizontal centered">
+				<div id="large-link">
+					<a href="https://github.com/Caeden117" target="_blank" rel="noopener noreferrer" class="link">
+						<i class="fab fa-github" id="icon" ></i><span id="consolas">GitHub</span>
+					</a>
+				</div>
+
+				<div id="large-link">
+					<a href="https://twitter.com/The_Caeden117" target="_blank" rel="noopener noreferrer" class="link">
+						<i class="fab fa-twitter" id="icon" ></i><span id="consolas">Twitter</span>
+					</a>
+				</div>
 			</div>
 		</div>
-		<div class="bottom">
-			<a href="https://github.com/Caeden117" target="_blank" rel="noopener noreferrer">
-				<button class="button">
-					<i id="icon" class="fab fa-github"></i>
-					GitHub
-				</button>
-			</a>
-			<a href="https://twitter.com/The_Caeden117" target="_blank" rel="noopener noreferrer">
-				<button class="button">
-					<i id="icon" class="fab fa-twitter"></i>
-					Twitter
-				</button>
-			</a>
-			<p id="footer"><i>Bit empty here, isn't it?</i></p>
+
+		<!--About Me-->
+		<div class="top-anchored horizontal dark row full">
+			<div class="centered small-side">
+				<h2>Insert photo of myself</h2>
+			</div>
+			
+			<div class="top-anchored big-side">
+
+				<h2>Hi! I'm <span class="accent">Caeden</span>.</h2>
+
+				<p>
+					I am an 18-year-old from Washington State, interested in game and back-end development.
+					<br><br>
+					For the past few years, my free time has been spent creating open-source projects and game modifications. Some of these are used by hundreds of people every day, and I've also had opportunities to work with many wonderful developers in the open source community. Not only did I have a blast doing all of this, but the experiences have all taught me valuable skills in developing optimized, maintainable, and understandable code.
+					<br><br>
+					Now that I've graduated High School, I want to apply this enthusiasm and learning to the real world.
+				</p>
+
+
+			</div>
 		</div>
+
+		<!--Skills-->
+		<div class="centered horizontal light row">
+			<div class="small-side">
+				<h1>Skills</h1>
+			</div>
+
+			<div class="top-anchored big-side">
+				<h4>
+					Almost all of my programming skills has been self-taught, from developing my personal projects, to working with other developers.
+					
+				</h4>
+
+				<div class="top-anchored big-side" id="consolas">
+					<table>
+						<tr>
+							<td><li><p>C#</p></li></td>
+							<td><li><p>Unity</p></li></td>
+							<td><li><p>.NET 5</p></li></td>
+						</tr>
+						<tr>
+							<td><li><p>ASP.NET Core</p></li></td>
+							<td><li><p>Dependency Injection</p></li></td>
+							<td><li><p>Git</p></li></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<!--Projects-->
+		<div class="top-anchored dark row">
+			<h1 class="accent">Projects</h1>
+
+			<h3>Here's some of the projects I have worked on.</h3>
+		</div>
+
+		<!--ChroMapper-->
+		<div class="centered horizontal light row">
+			<div class="top-anchored big-side">
+				<h1 class="accent" id="consolas">ChroMapper</h1>
+
+				<h4>
+					An open-source beatmap editor for the popular rhythm game
+					<a href="https://beatsaber.com" target="_blank" rel="noopener noreferrer" class="link">
+						<span id="consolas">Beat Saber</span>
+					</a>.
+
+					<br><br>
+
+					ChroMapper has been my largest and most successful project yet, with thousands of users and dozens of contributors.
+				</h4>
+				
+				<div class="centered">
+					<div id="large-link">
+						<a href="https://github.com/Caeden117/ChroMapper" target="_blank" rel="noopener noreferrer" class="link">
+							<span id="consolas">View Project</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="small-side">
+				<h2>Image</h2>
+			</div>
+		</div>
+		
+		<!--Hive-->
+		<div class="centered horizontal dark row">
+			<div class="small-side">
+				<h2>Image</h2>
+			</div>
+
+			<div class="top-anchored big-side">
+				<h1 class="accent" id="consolas">Hive</h1>
+
+				<h4>
+					An open-source, game-agnostic, back-end framework for a mod repository.
+					<br><br>
+					A team project between myself and other developers in the Beat Saber modded community.
+				</h4>
+				
+				<div class="centered">
+					<div id="large-link">
+						<a href="https://github.com/Atlas-Rhythm/Hive" target="_blank" rel="noopener noreferrer" class="link">
+							<span id="consolas">View Project</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Curved UI Utility-->
+		<div class="centered horizontal light row">
+			<div class="top-anchored big-side">
+				<h1 class="accent" id="consolas">Curved UI Utility</h1>
+
+				<h4>
+					A simple package for Unity, which curves UI according to adjustable parameters.
+					<br><br>
+					The weirdest project I've done, but has taught me a lot about optimizing my code.
+				</h4>
+				
+				<div class="centered">
+					<div id="large-link">
+						<a href="https://github.com/Caeden117/Curved-UI-Utility" target="_blank" rel="noopener noreferrer" class="link">
+							<span id="consolas">View Project</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="small-side">
+				<h2>Image</h2>
+			</div>
+		</div>
+
+		<!--Contact-->
+		<div class="top-anchored dark row">
+			<h1 class="accent">Let's collaborate.</h1>
+			<h3>Feel free to reach out to ask questions, connect, or if you want to work with me.</h3>
+
+			<div class="horizontal centered">
+				<div id="large-link">
+					<a href="https://github.com/Caeden117" target="_blank" rel="noopener noreferrer" class="link">
+						<i class="fab fa-github" id="icon" ></i><span id="consolas">GitHub</span>
+					</a>
+				</div>
+				
+				<div id="large-link">
+					<a href="mailto:caeden.s@outlook.com" target="_blank" rel="noopener noreferrer" class="link">
+						<i class="fas fa-envelope " id="icon" ></i><span id="consolas">caeden.s@outlook.com</span>
+					</a>
+				</div>
+
+				<div id="large-link">
+					<a href="https://twitter.com/The_Caeden117" target="_blank" rel="noopener noreferrer" class="link">
+						<i class="fab fa-twitter" id="icon" ></i><span id="consolas">Twitter</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
 	</body>
 </html>
