@@ -99,8 +99,10 @@ a:active { text-decoration: none; color: inherit; }
     --shadow-color: rgba(0,0, 0, 0.5);
     --shadow-size: 8px;
 
-    width:91%;
-    height:91%;
+    width: 91%;
+    height: 91%;
+
+    cursor: pointer;
 }
 
 .expandable:active {
@@ -108,20 +110,38 @@ a:active { text-decoration: none; color: inherit; }
     --shadow-size: 64px;
 
     position: fixed;
-    bottom: 0;
     top: 0;
-    right: 2.5vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0% auto;
 
-    width:95%;
-    height: auto;
-
-    transition: width 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-    
     margin-top: auto;
     margin-bottom: auto;
 
+    max-height: 95%;
+
+    animation-duration: 0.4s;
+    animation-name: expand;
+
+    height:auto;
+    object-fit:contain;
+    overflow: hidden;
+
+    transition: width 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+
     justify-self: center;
     z-index: 100000;
+}
+
+@keyframes expand {
+    from {
+        width: 50%;
+    }
+
+    to {
+        width: 90%;
+    }
 }
 
 .centered {
