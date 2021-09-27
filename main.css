@@ -24,7 +24,7 @@ h3 {
 }
 
 h4 {
-    margin: 5% 5%;
+    margin: 32px;
 }
 
 p {
@@ -61,9 +61,11 @@ img {
 
     transition-duration: 0.4s;
 
-    position: relative;
-    width: 90%;
-    height: 90%;
+    max-width: 90%;
+    max-height: 90%;
+
+    width: auto;
+    height: auto;
 }
 
 a:link {  text-decoration: none; color: inherit; }
@@ -99,8 +101,8 @@ a:active { text-decoration: none; color: inherit; }
     --shadow-color: rgba(0,0, 0, 0.5);
     --shadow-size: 8px;
 
-    width: 91%;
-    height: 91%;
+    max-width: 91%;
+    max-height: 91%;
 
     cursor: pointer;
 }
@@ -123,12 +125,11 @@ a:active { text-decoration: none; color: inherit; }
 
     animation-duration: 0.4s;
     animation-name: expand;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 
     height:auto;
     object-fit:contain;
     overflow: hidden;
-
-    transition: width 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 
     justify-self: center;
     z-index: 100000;
@@ -145,23 +146,28 @@ a:active { text-decoration: none; color: inherit; }
 }
 
 .centered {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .top-anchored {
+    position: relative;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
 }
 
 .horizontal {
+    position: relative;
     flex-direction: row;
     justify-content: center;
 }
 
 .row {
+    position: relative;
     height: 50%;
 }
 
@@ -189,10 +195,14 @@ a:active { text-decoration: none; color: inherit; }
 }
 
 .big-side {
+    justify-items: center;
+    height: 100%;
     width: 66.67%;
 }
 
 .small-side {
+    justify-items: center;
+    height: 100%;
     width: 33.33%;
 }
 
@@ -241,4 +251,30 @@ a:active { text-decoration: none; color: inherit; }
     background-color: lime;
     color: black;
     text-shadow: none;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    table { margin: 10%; }
+
+    .horizontal
+    {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .row { height: 100%; }
+
+    .full { height: 200%; }
+
+    .big-side {
+        width: 100%;
+        height: 66.67%;
+    }
+    
+    .small-side {
+        height: 33.33%;
+        width: 100%;
+    }
+
+    #large-link { margin: 2% 0%; }
 }
