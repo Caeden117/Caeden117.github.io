@@ -255,7 +255,7 @@ a:active { text-decoration: none; color: inherit; }
 
 @media (max-aspect-ratio: 1/1) {
     @viewport {
-        zoom: 0.5;
+        zoom: 1;
     }
 
     table { margin: 10%; }
@@ -266,9 +266,19 @@ a:active { text-decoration: none; color: inherit; }
         justify-content: space-evenly;
     }
 
-    .row { height: 100%; }
+    .row
+    { 
+        min-height: 100%;
+        height: auto;
+        padding: 5%;
+    }
 
-    .full { height: 200%; }
+    .full
+    { 
+        min-height: 200%; 
+        height: auto;
+        padding: 5%;
+    }
 
     .big-side {
         width: 100%;
