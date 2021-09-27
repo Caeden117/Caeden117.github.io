@@ -254,6 +254,10 @@ a:active { text-decoration: none; color: inherit; }
 }
 
 @media (max-aspect-ratio: 1/1) {
+    @viewport {
+        zoom: 0.5;
+    }
+
     table { margin: 10%; }
 
     .horizontal
