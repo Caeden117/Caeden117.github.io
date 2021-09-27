@@ -253,10 +253,7 @@ a:active { text-decoration: none; color: inherit; }
     text-shadow: none;
 }
 
-@media (max-aspect-ratio: 1/1) {
-    @viewport {
-        zoom: 1;
-    }
+@media (max-aspect-ratio: 1/1), (pointer:none), (pointer:coarse) {
 
     table { margin: 10%; }
 
