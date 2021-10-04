@@ -17,8 +17,11 @@
 		<!--Website-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
 
+    <!--Top Bar-->
+    <iframe src="top-bar.html" title="Top Bar Navigation" sandbox="allow-top-navigation allow-same-origin"></iframe>
+
 		<!--Header-->
-		<div class="centered light row">
+		<div class="centered light row" id="header">
 			<h1 class="accent">Caeden Statia</h1>
 			<h3 id="consolas">Self-taught <span class="accent">C#</span> Developer</h3>
 
@@ -50,15 +53,13 @@
 				<p>
 					I am an 18-year-old from rural Washington State, interested in game and back-end development.
 					<br><br>
-					My life as a programmer began very young, when I was introduced to none other than <a href="https://en.wikipedia.org/wiki/Kodu_Game_Lab" target="_blank" rel="noopener noreferrer" class="link"><span id="consolas">Kodu Game Lab.</span></a> The visual, gamified interface to programming really helped my younger self grasp basic concepts, and the large 3D environment helped me easily create almost whatever I wanted. 
+					My life as a programmer began very young, when I was introduced to <a href="https://en.wikipedia.org/wiki/Kodu_Game_Lab" target="_blank" rel="noopener noreferrer" class="link"><span id="consolas">Kodu Game Lab.</span></a> The visual programming interface helped me grasp basic concepts, and the 3D level editor let me create whatever I wanted. 
 					<br><br>
-					Sometime thereafter, I began learning other programming languages something intrigued me. Whether that be my own "operating system" written in Visual Basic .NET, or creating my own phone system in <i>Minecraft</i>, or even going into basic web development with HTML, CSS, and JavaScript.
+					In High School, I took many Computer Science courses, up to AP Computer Science Principles. During the class, the teacher had us compete in a national competition by the <a href="https://academy.cs.cmu.edu/" target="_blank" rel="noopener noreferrer" class="link"><span id="consolas">Carnegie Mellon University CS Academy.</span></a> We were tasked to create something with their web-based Python environment. I chose to create a game, a recreation of <a href="https://superhexagon.com/" target="_blank" rel="noopener noreferrer" class="link"><span id="consolas">Super Hexagon.</span></a> A few months later, it was revealed that I had won 1st place in the competition. My prize? A classroom set of stickers! I realized that my skills in programming is being rewarded, even if it was a bunch of stickers.
 					<br><br>
-					While in High School, I took many Computer Science courses, up to AP Computer Science Principles. During the class, the teacher had us compete in a national competition set by the <a href="https://academy.cs.cmu.edu/" target="_blank" rel="noopener noreferrer" class="link"><span id="consolas">Carnegie Mellon University CS Academy.</span></a> We were tasked to create any form of art, game, or project using their web-based Python environment. I chose to create a game, a recreation of one of my favorites at the time, <a href="https://superhexagon.com/" target="_blank" rel="noopener noreferrer" class="link"><span id="consolas">Super Hexagon.</span></a> A few months later, it was revealed that I had won 1st place in the competition. My prize? A classroom set of Carnegie Mellon University stickers. At this point, I realized that my growing skills in programming can actually pay off, even if it was a bunch of stickers.
+					Ever since, my free time has been spent creating open-source projects. I've also had opportunities to work with many wonderful developers. Not only did I have a blast doing all of this, but the experiences have all taught me valuable skills in development.
 					<br><br>
-					Ever since then, my free time has been spent creating open-source projects, and modifications to my favorite games. Some of these projects are used by hundreds of people every day, and I've also had opportunities to work with many wonderful developers in the open source community. Not only did I have a blast doing all of this, but the experiences have all taught me valuable skills in developing, optimizing, and maintaining code.
-					<br><br>
-					Now that I've graduated High School, I am eager to apply my skills, learning, and enthusiasm to the real world. I'm currently seeking a job opportunity in the world of software development.
+					Now that I've graduated High School, I am eager to apply my skills, learning, and enthusiasm to the real world, and I'm currently seeking a job opportunity in the world of software development.
 				</p>
 
 
@@ -72,24 +73,21 @@
 			</div>
 
 			<div class="centered big-side">
-				<h4>
+				<h4 class="centered big-side">
 					Almost all of my programming skills has been self-taught, from developing my personal projects, to working with other developers.
-					
 				</h4>
 
 				<div class="top-anchored big-side" id="consolas">
-					<table>
-						<tr>
-							<td><li><p>C#</p></li></td>
-							<td><li><p>Unity</p></li></td>
-							<td><li><p>.NET 5</p></li></td>
-						</tr>
-						<tr>
-							<td><li><p>ASP.NET Core</p></li></td>
-							<td><li><p>Entity Framework</p></li></td>
-							<td><li><p>Git</p></li></td>
-						</tr>
-					</table>
+					<div class="centered horizontal-spaced">
+						<li><h3>C#</h3></li>
+						<li><h3>Unity</h3></li>
+						<li><h3>.NET 5</h3></li>
+					</div>
+					<div class="centered horizontal-spaced">
+						<li><h3>ASP.NET Core</h3></li>
+						<li><h3>Entity Framework</h3></li>
+						<li><h3>Git</h3></li>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -114,7 +112,7 @@
 				
 				<div class="centered">
 					<div id="large-link">
-						<a href="https://github.com/Caeden117/ChroMapper" target="_blank" rel="noopener noreferrer" class="link">
+						<a href="projects/chromapper.html" rel="noopener noreferrer" class="link">
 							<span id="consolas">View Project</span>
 						</a>
 					</div>
@@ -144,7 +142,7 @@
 				
 				<div class="centered">
 					<div id="large-link">
-						<a href="https://github.com/Atlas-Rhythm/Hive" target="_blank" rel="noopener noreferrer" class="link">
+						<a href="projects/hive.html" rel="noopener noreferrer" class="link">
 							<span id="consolas">View Project</span>
 						</a>
 					</div>
@@ -159,13 +157,11 @@
 
 				<h4>
 					A simple package for Unity, which curves UI according to adjustable parameters.
-					<br><br>
-					The weirdest project I've done, but has taught me a lot about optimizing my code.
 				</h4>
 				
 				<div class="centered">
 					<div id="large-link">
-						<a href="https://github.com/Caeden117/Curved-UI-Utility" target="_blank" rel="noopener noreferrer" class="link">
+						<a href="projects/curved-ui-utility.html" rel="noopener noreferrer" class="link">
 							<span id="consolas">View Project</span>
 						</a>
 					</div>

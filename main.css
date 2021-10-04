@@ -10,6 +10,17 @@ body, html {
     text-align: center;
 }
 
+iframe {
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 64px;
+    border: none;
+    box-shadow: 0px 0px 8px 0px black;
+}
+
 h1 {
     font-size: 72px;
     text-shadow: 2px 2px 3px black;
@@ -31,15 +42,6 @@ p {
     margin: 0% 5%;
     text-align: left;
     line-height: 1.5;
-}
-
-table {
-    margin: 0px 0px 0px 25%;
-    border-collapse: collapse;
-}
-
-td {
-    width: 64px;
 }
 
 img {
@@ -122,13 +124,14 @@ a:active { text-decoration: none; color: inherit; }
     margin-bottom: auto;
 
     max-height: 95%;
+    width: 90%;
 
     animation-duration: 0.4s;
     animation-name: expand;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 
-    height:auto;
-    object-fit:contain;
+    height: auto;
+    object-fit: contain;
     overflow: hidden;
 
     justify-self: center;
@@ -164,6 +167,12 @@ a:active { text-decoration: none; color: inherit; }
     position: relative;
     flex-direction: row;
     justify-content: center;
+}
+
+.horizontal-spaced {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .row {
@@ -204,6 +213,30 @@ a:active { text-decoration: none; color: inherit; }
     justify-items: center;
     height: 100%;
     width: 33.33%;
+}
+
+.top-bar {
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 64px;
+
+    background-color: rgb(200, 200, 200);
+    color: rgb(64, 64, 64);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-bar h3 {
+    padding: 0px 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#header {
+    z-index: 1000;
 }
 
 #consolas {
@@ -255,12 +288,10 @@ a:active { text-decoration: none; color: inherit; }
 
 @media (max-aspect-ratio: 1/1), (pointer:none), (pointer:coarse) {
 
-    table { margin: 10%; }
-
     .horizontal
     {
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .row
@@ -280,11 +311,13 @@ a:active { text-decoration: none; color: inherit; }
     .big-side {
         width: 100%;
         height: 66.67%;
+        margin: 5%;
     }
     
     .small-side {
         height: 33.33%;
         width: 100%;
+        margin: 5%;
     }
 
     #large-link { margin: 2% 0%; }
