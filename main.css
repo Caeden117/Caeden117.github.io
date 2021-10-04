@@ -288,6 +288,10 @@ a:active { text-decoration: none; color: inherit; }
 
 @media (max-aspect-ratio: 1/1), (pointer:none), (pointer:coarse) {
 
+    iframe {
+        display: none;
+    }
+
     .horizontal
     {
         flex-direction: column;
