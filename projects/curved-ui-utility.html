@@ -1,123 +1,143 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Caeden Statia</title>
-		<link rel="icon" href="../caeden.png" />
-		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="../main.css" />
-		<script src="https://kit.fontawesome.com/eb5efa23ff.js" crossorigin="anonymous"></script>
-	</head>
-	<body>
-		<!--Discord Embed Information-->
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="caeden.dev" />
-		<meta property="og:description" content="Self-taught C# Developer." />
-		<meta property="og:url" content="https://caeden.dev/" />
-		<meta property="og:image" content="https://caeden.dev/caeden.png" />
-		<!--Website-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
 
-    <!--Top Bar-->
-    <iframe src="../top-bar.html" title="Top Bar Navigation"></iframe>
+<head>
+	<title>Caeden Statia</title>
+	<link rel="icon" href="../caeden.png" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+		type="text/css" />
+	<link rel="stylesheet" href="../main.css" />
+	<script src="https://kit.fontawesome.com/eb5efa23ff.js" crossorigin="anonymous"></script>
+</head>
 
-		<!--Header-->
-		<div class="centered light row">
-			<h1 class="accent">Curved UI Utility</h1>
-			<hp id="consolas">
-        Curved UI Utility is an open source Unity asset for curving any UI or HUD.
-      </hp>
+<body>
+	<!--Discord Embed Information-->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="caeden.dev" />
+	<meta property="og:description" content="Self-taught C# Developer." />
+	<meta property="og:url" content="https://caeden.dev/" />
+	<meta property="og:image" content="https://caeden.dev/caeden.png" />
+	<!--Website-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
 
-			<div class="horizontal centered">
-				<div id="large-link">
-					<a href="https://github.com/Caeden117/Curved-UI-Utility" target="_blank" rel="noopener noreferrer" class="link">
-						<i class="fab fa-github" id="icon" ></i><span id="consolas">Source Code</span>
-					</a>
-				</div>
+	<!--Skip Nav-->
+	<a class="skip-nav" href="#about">
+		<h2>
+			Skip Navigation
+		</h2>
+	</a>
 
+	<!--Top Bar-->
+	<iframe src="../top-bar.html" title="Top Bar Navigation"></iframe>
+
+	<!--Header-->
+	<div class="centered light row">
+		<h1 class="accent">Curved UI Utility</h1>
+		<hp id="consolas">
+			Curved UI Utility is an open source Unity asset for curving any UI or HUD.
+		</hp>
+
+		<div class="horizontal centered">
+			<div id="large-link">
+				<a href="https://github.com/Caeden117/Curved-UI-Utility" target="_blank" rel="noopener noreferrer" class="link">
+					<i class="fab fa-github" id="icon"></i><span id="consolas">Source Code</span>
+				</a>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Goal and Explanation -->
+	<div class="top-anchored dark row" id="about">
+		<h2>Goal and Explanation</h2>
+		<div class="horizontal centered">
+			<div class="big-side">
+				<p>
+					I am a huge fan of the <i>Halo</i> franchise, and one of the effects I couldn't help but notice was how Bungie
+					approached the HUD in their later entries.
+					<br><br>
+					In first person, your HUD was curved inwards. In third person, the HUD would dynamically flatten out to its
+					true 2D appearance.
+					<br><br>
+					For some odd reason, I was really interested in this effect, and I always wondered how Bungie implemented this
+					system. I decided to recreate this effect myself in Unity and C#.
+				</p>
+			</div>
+
+			<div class="small-side">
+				<img class="expandable" src="../content/curved-ui-utility2.gif" />
 			</div>
 		</div>
+	</div>
 
-    <!-- Goal and Explanation -->
-		<div class="top-anchored dark row">
-			<h2>Goal and Explanation</h2>
-      <div class="horizontal centered">
-        <div class="big-side">
-          <p>
-            I am a huge fan of the <i>Halo</i> franchise, and one of the effects I couldn't help but notice was how Bungie approached the HUD in their later entries.
-            <br><br>
-            In first person, your HUD was curved inwards. In third person, the HUD would dynamically flatten out to its true 2D appearance.
-            <br><br>
-            For some odd reason, I was really interested in this effect, and I always wondered how Bungie implemented this system. I decided to recreate this effect myself in Unity and C#.
-          </p>
-        </div>
+	<!-- Problems -->
+	<div class="top-anchored light row">
+		<h2>Problems and Growing Pains</h2>
+		<div class="horizontal centered">
+			<div class="small-side">
+				<img class="expandable" src="../content/curved-ui-utility4.png" />
+			</div>
 
-        <div class="small-side">
-          <img class="expandable" src="../content/curved-ui-utility2.gif"/>
-        </div>
-      </div>
-		</div>
-    
-    <!-- Problems -->
-		<div class="top-anchored light row">
-			<h2>Problems and Growing Pains</h2>
-      <div class="horizontal centered">
-        <div class="small-side">
-          <img class="expandable" src="../content/curved-ui-utility4.png"/>
-        </div>
-
-        <div class="big-side">
-          <p>
-            My early iteration of Curved UI Utility was slow. Pretty slow. This was because I was rendering the HUD twice on two separate canvases; once as a flat image, then another passed through a shader which did the curving.
-            <br><br>
-            I later scrapped this iteration and started anew. Because Curved UI Utility was going to operate on each UI element every frame, I wanted this to be fast. Not only that, I also wanted the package to be easy for game developers to implement.
-          </p>
-        </div>
-      </div>
-		</div>
-
-    <!-- Lessons Learned -->
-		<div class="top-anchored dark row">
-			<h2>Lessons Learned</h2>
-      <div class="horizontal centered">
-        <div class="big-side">
-          <p>
-            Curved UI Utility isn't nearly as big of a project compared to ChroMapper or Hive, but it did give me a newfound respect for real-time code optimization, and how fast systems need to be to create high performance games.
-            <br><br>
-            Curved UI Utility also taught me the difference between parameters passed by-value and by-ref, and how I could take advantage of those to achieve fast code.
-          </p>
-        </div>
-
-        <div class="small-side">
-          <img class="expandable" src="../content/curved-ui-utility3.gif"/>
-        </div>
-      </div>
-		</div>
-
-		<!--Contact-->
-		<div class="top-anchored light row">
-			<h1 class="accent">Let's collaborate.</h1>
-			<h3>Feel free to reach out to ask questions, connect, or if you want to work with me.</h3>
-
-			<div class="horizontal centered">
-				<div id="large-link">
-					<a href="https://github.com/Caeden117" target="_blank" rel="noopener noreferrer" class="link">
-						<i class="fab fa-github" id="icon" ></i><span id="consolas">GitHub</span>
-					</a>
-				</div>
-				
-				<div id="large-link">
-					<a href="mailto:caeden.s@outlook.com" target="_blank" rel="noopener noreferrer" class="link">
-						<i class="fas fa-envelope " id="icon" ></i><span id="consolas">caeden.s@outlook.com</span>
-					</a>
-				</div>
-
-				<div id="large-link">
-					<a href="https://twitter.com/The_Caeden117" target="_blank" rel="noopener noreferrer" class="link">
-						<i class="fab fa-twitter" id="icon" ></i><span id="consolas">Twitter</span>
-					</a>
-				</div>
+			<div class="big-side">
+				<p>
+					My early iteration of Curved UI Utility was slow. Pretty slow. This was because I was rendering the HUD twice
+					on two separate canvases; once as a flat image, then another passed through a shader which did the curving.
+					<br><br>
+					I later scrapped this iteration and started anew. Because Curved UI Utility was going to operate on each UI
+					element every frame, I wanted this to be fast. Not only that, I also wanted the package to be easy for game
+					developers to implement.
+				</p>
 			</div>
 		</div>
+	</div>
 
-	</body>
+	<!-- Lessons Learned -->
+	<div class="top-anchored dark row">
+		<h2>Lessons Learned</h2>
+		<div class="horizontal centered">
+			<div class="big-side">
+				<p>
+					Curved UI Utility isn't nearly as big of a project compared to ChroMapper or Hive, but it did give me a
+					newfound respect for real-time code optimization, and how fast systems need to be to create high performance
+					games.
+					<br><br>
+					Curved UI Utility also taught me the difference between parameters passed by-value and by-ref, and how I could
+					take advantage of those to achieve fast code.
+				</p>
+			</div>
+
+			<div class="small-side">
+				<img class="expandable" src="../content/curved-ui-utility3.gif" />
+			</div>
+		</div>
+	</div>
+
+	<!--Contact-->
+	<div class="top-anchored light row">
+		<h1 class="accent">Let's collaborate.</h1>
+		<h3>Feel free to reach out to ask questions, connect, or if you want to work with me.</h3>
+
+		<div class="horizontal centered">
+			<div id="large-link">
+				<a href="https://github.com/Caeden117" target="_blank" rel="noopener noreferrer" class="link">
+					<i class="fab fa-github" id="icon"></i><span id="consolas">GitHub</span>
+				</a>
+			</div>
+
+			<div id="large-link">
+				<a href="mailto:caeden.s@outlook.com" target="_blank" rel="noopener noreferrer" class="link">
+					<i class="fas fa-envelope " id="icon"></i><span id="consolas">caeden.s@outlook.com</span>
+				</a>
+			</div>
+
+			<div id="large-link">
+				<a href="https://twitter.com/The_Caeden117" target="_blank" rel="noopener noreferrer" class="link">
+					<i class="fab fa-twitter" id="icon"></i><span id="consolas">Twitter</span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+
 </html>
