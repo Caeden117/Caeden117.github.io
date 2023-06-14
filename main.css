@@ -10,7 +10,9 @@ html {
 
     text-align: center;
 
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
+
+    background-color: rgb(200, 200, 200);
 }
 
 iframe {
@@ -22,6 +24,10 @@ iframe {
     height: 64px;
     border: none;
     box-shadow: 0px 0px 8px 0px black;
+}
+
+iframe.sticky {
+    position: sticky;
 }
 
 h1 {
@@ -185,7 +191,6 @@ a:active {
 
 .row {
     position: relative;
-    height: 50%;
 }
 
 .full {
@@ -224,7 +229,7 @@ a:active {
 }
 
 .top-bar {
-    position: fixed;
+    position: sticky;
     margin: 0;
     width: 100%;
     height: 64px;
@@ -364,6 +369,10 @@ a:active {
 
 /* Responsiveness */
 /* Only take up the height that's needed */
+.padding-bottom-2 {
+    padding-bottom: 2rem;
+}
+
 .height-cancel {
     min-height: auto;
 }
@@ -398,10 +407,25 @@ a:active {
     font-family: 'Arial', sans-serif;
 }
 
-/* Skills grid switches to 2 items per row */
+/* Very small screens */
 @media (max-width: 425px) {
+
+    /* Skills grid switches to 2 items per row */
     .skills .grid-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Reduce font size */
+    h1 {
+        font-size: 15vw;
+    }
+
+    h2 {
+        font-size: 12vw;
+    }
+
+    h3, #large-link {
+        font-size: 6vw;
     }
 }
 

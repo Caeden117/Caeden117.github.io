@@ -2,15 +2,9 @@
 <html>
 
 <head>
-	<title>Caeden Statia</title>
-	<link rel="icon" href="../caeden.png" />
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-		type="text/css" />
-	<link rel="stylesheet" href="../main.css" />
-	<script src="https://kit.fontawesome.com/eb5efa23ff.js" crossorigin="anonymous"></script>
-</head>
+	<meta charset="UTF-8">
+	<title>Curved UI Utility | Caeden Statia</title>
 
-<body onclick="expandImage(event)">
 	<!--Discord Embed Information-->
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="caeden.dev" />
@@ -20,6 +14,15 @@
 	<!--Website-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
 
+	<link rel="icon" href="../caeden.png" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+		type="text/css" />
+	<link rel="stylesheet" href="../main.css" />
+	<script src="https://kit.fontawesome.com/eb5efa23ff.js" crossorigin="anonymous"></script>
+</head>
+
+<body onclick="expandImage(event)">
+
 	<!--Skip Nav-->
 	<a class="skip-nav" href="#about">
 		<h2>
@@ -28,7 +31,7 @@
 	</a>
 
 	<!--Top Bar-->
-	<iframe src="../top-bar.html" title="Top Bar Navigation"></iframe>
+	<iframe src="../top-bar.html" title="Top Bar Navigation" class="sticky"></iframe>
 
 	<!--Header-->
 	<div class="centered light row">
@@ -51,7 +54,7 @@
 	<!-- Goal and Explanation -->
 	<div class="top-anchored dark row" id="about">
 		<h2>Goal and Explanation</h2>
-		<div class="horizontal centered">
+		<div class="horizontal centered padding-bottom-2">
 			<div class="big-side">
 				<p>
 					I am a huge fan of the <i>Halo</i> franchise, and one of the effects I couldn't help but notice was
@@ -77,7 +80,7 @@
 	<!-- Problems -->
 	<div class="top-anchored light row">
 		<h2>Problems and Growing Pains</h2>
-		<div class="horizontal centered">
+		<div class="horizontal centered padding-bottom-2">
 			<div class="small-side">
 				<img class="expandable" src="../content/curved-ui-utility4.png" />
 			</div>
@@ -102,7 +105,7 @@
 	<!-- Lessons Learned -->
 	<div class="top-anchored dark row">
 		<h2>Lessons Learned</h2>
-		<div class="horizontal centered">
+		<div class="horizontal centered padding-bottom-2">
 			<div class="big-side">
 				<p>
 					Curved UI Utility isn't nearly as big of a project compared to ChroMapper or Hive, but it did give
