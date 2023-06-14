@@ -225,7 +225,7 @@ a:active {
 }
 
 .top-bar {
-    position: sticky;
+    position: fixed;
     margin: 0;
     width: 100%;
     height: 64px;
