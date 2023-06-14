@@ -262,6 +262,7 @@ a:active {
 
     padding: 0px 0px;
     margin: 0px 32px;
+    margin-bottom: 3rem;
 
     font-size: 32px;
     text-align: center;
@@ -367,6 +368,7 @@ a:active {
     min-height: auto;
 }
 
+/* Skills section */
 .skills.height-cancel {
     height: auto;
 }
@@ -375,7 +377,7 @@ a:active {
     margin: 1rem;
 }
 
-.grid-container {
+.skills .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
@@ -383,12 +385,12 @@ a:active {
     align-items: start;
 }
 
-.grid-item {
+.skills .grid-item {
     /* You can add any other styling to the grid items here */
     position: relative;
 }
 
-.grid-item::before {
+.skills .grid-item::before {
     content: "•";
     position: absolute;
     top: -10px;
@@ -398,7 +400,7 @@ a:active {
 
 /* Skills grid switches to 2 items per row */
 @media (max-width: 425px) {
-    .grid-container {
+    .skills .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
