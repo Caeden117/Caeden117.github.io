@@ -10,7 +10,9 @@ html {
 
     text-align: center;
 
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
+
+    background-color: rgb(200, 200, 200);
 }
 
 iframe {
@@ -48,7 +50,8 @@ p {
 }
 
 img {
-    image-rendering: optimizeQuality;
+    /* This property is deprecated/obsolete and should not be used.*/
+    /* image-rendering: optimizeQuality;*/
 
     --shadow-color: rgba(0, 0, 0, 0.33);
     --shadow-size: 8px;
@@ -116,7 +119,7 @@ a:active {
     cursor: pointer;
 }
 
-.expandable:active {
+.expanded, .expandable.expanded:hover {
     --shadow-color: rgba(0, 0, 0, 1);
     --shadow-size: 64px;
 
@@ -184,7 +187,6 @@ a:active {
 
 .row {
     position: relative;
-    height: 50%;
 }
 
 .full {
@@ -261,6 +263,7 @@ a:active {
 
     padding: 0px 0px;
     margin: 0px 32px;
+    margin-bottom: 3rem;
 
     font-size: 32px;
     text-align: center;
@@ -346,16 +349,73 @@ a:active {
     .big-side {
         width: 100%;
         height: 66.67%;
-        margin: 5%;
+        margin-bottom: 5%;
     }
 
     .small-side {
         height: 33.33%;
         width: 100%;
-        margin: 5%;
+        margin-top: 5%;
     }
 
     #large-link {
         margin: 2% 0%;
     }
 }
+
+/* Responsiveness */
+/* Only take up the height that's needed */
+.padding-bottom-2 {
+    padding-bottom: 2rem;
+}
+
+/* Skills section */
+
+.skills li {
+    margin: 1rem;
+}
+
+.skills .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: start;
+}
+
+.skills .grid-item {
+    /* You can add any other styling to the grid items here */
+    position: relative;
+}
+
+.skills .grid-item::before {
+    content: "•";
+    position: absolute;
+    top: -10px;
+    font-size: 1.5em;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Very small screens */
+@media (max-width: 425px) {
+
+    /* Skills grid switches to 2 items per row */
+    .skills .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Reduce font size */
+    h1 {
+        font-size: 15vw;
+    }
+
+    h2 {
+        font-size: 12vw;
+    }
+
+    h3, #large-link {
+        font-size: 6vw;
+    }
+}
+
+/* Responsiveness */

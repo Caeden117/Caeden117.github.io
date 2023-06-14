@@ -2,15 +2,9 @@
 <html>
 
 <head>
-	<title>Caeden Statia</title>
-	<link rel="icon" href="../caeden.png" />
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-		type="text/css" />
-	<link rel="stylesheet" href="../main.css" />
-	<script src="https://kit.fontawesome.com/eb5efa23ff.js" crossorigin="anonymous"></script>
-</head>
+	<meta charset="UTF-8">
+	<title>Hive | Caeden Statia</title>
 
-<body>
 	<!--Discord Embed Information-->
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="caeden.dev" />
@@ -19,6 +13,15 @@
 	<meta property="og:image" content="https://caeden.dev/caeden.png" />
 	<!--Website-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
+
+	<link rel="icon" href="../caeden.png" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+		type="text/css" />
+	<link rel="stylesheet" href="../main.css" />
+	<script src="https://kit.fontawesome.com/eb5efa23ff.js" crossorigin="anonymous"></script>
+</head>
+
+<body onclick="expandImage(event)">
 
 	<!--Skip Nav-->
 	<a class="skip-nav" href="#about">
@@ -31,7 +34,7 @@
 	<iframe src="../top-bar.html" title="Top Bar Navigation"></iframe>
 
 	<!--Header-->
-	<div class="centered light row">
+	<div class="centered light row" id="header">
 		<h1 class="accent">Hive</h1>
 		<hp id="consolas">
 			Hive is a game-agnostic, back-end framework for modding communities of all shapes and sizes.
@@ -51,17 +54,21 @@
 	<!-- Goal and Explanation -->
 	<div class="top-anchored dark row" id="about">
 		<h2>Project Goal</h2>
-		<div class="horizontal centered">
+		<div class="horizontal centered padding-bottom-2">
 			<div class="big-side">
 				<p>
 					Hive started as the replacement for our previous mod repository,
 					<a href="https://beatmods.com/" target="_blank" rel="noopener noreferrer" class="link">BeatMods</a>.
-					BeatMods was rushed, infamously broken, and was hacked together in a weekend as an emergency. At the beginning
-					of 2020, a team of talented developers in the Beat Saber community (myself included) decided enough was
+					BeatMods was rushed, infamously broken, and was hacked together in a weekend as an emergency. At the
+					beginning
+					of 2020, a team of talented developers in the Beat Saber community (myself included) decided enough
+					was
 					enough, got together, and started work on what would become Hive.
 					<br><br>
-					While we were designing Hive to be a replacement for our old Beat Saber mod repository, a key pillar we had
-					was to design Hive to be game-agnostic, barebones, and generic; any mod community can setup an instance of
+					While we were designing Hive to be a replacement for our old Beat Saber mod repository, a key pillar
+					we had
+					was to design Hive to be game-agnostic, barebones, and generic; any mod community can setup an
+					instance of
 					Hive and expand it to meet their exact needs.
 				</p>
 			</div>
@@ -78,14 +85,18 @@
 
 		<h4>
 			During initial planning, we decided to use ASP.NET Core and C# because of our collective experience with the
-			language. This was right around the corner of .NET 5, so we also wanted to take the opportunity to embrace new
+			language. This was right around the corner of .NET 5, so we also wanted to take the opportunity to embrace
+			new
 			features brought by .NET 5 and C# 9.
 			<br><br>
-			We also decided to take a hybrid GraphQL and RESTful approach to the API; the REST interface provided the basic
+			We also decided to take a hybrid GraphQL and RESTful approach to the API; the REST interface provided the
+			basic
 			functionality for Hive, while GraphQL would simplify more advanced queries.
 			<br><br>
-			Interestingly, we decided to not bundle a front-end with core Hive. Considering instances of Hive would look very
-			different depending on the instance maintainer, we instead decided to create one front-end for our complete, Beat
+			Interestingly, we decided to not bundle a front-end with core Hive. Considering instances of Hive would look
+			very
+			different depending on the instance maintainer, we instead decided to create one front-end for our complete,
+			Beat
 			Saber specific Hive instance as an "example" for other communities.
 		</h4>
 	</div>
@@ -93,19 +104,23 @@
 	<!-- Problems -->
 	<div class="top-anchored dark row">
 		<h2>Problems and Growing Pains</h2>
-		<div class="horizontal centered">
+		<div class="horizontal centered padding-bottom-2">
 			<div class="small-side">
 				<img class="expandable" src="../content/hive2.png" />
 			</div>
 
 			<div class="big-side">
 				<p>
-					This was my first big group project done with other talented developers. I learned to use Git in a team
-					environment, give and address feedback in Pull Request reviews, be asked about the decisions I've made in my
+					This was my first big group project done with other talented developers. I learned to use Git in a
+					team
+					environment, give and address feedback in Pull Request reviews, be asked about the decisions I've
+					made in my
 					code, and conform that code to strict quality and convention guidelines.
 					<br><br>
-					Furthermore, this was also my first time ever touching ASP.NET; I essentially dived in completely blind.
-					My previous C# experience did help, but a lot of ASP.NET was learned from hands-on experience, and turning to
+					Furthermore, this was also my first time ever touching ASP.NET; I essentially dived in completely
+					blind.
+					My previous C# experience did help, but a lot of ASP.NET was learned from hands-on experience, and
+					turning to
 					my fellow developers for help.
 				</p>
 			</div>
@@ -115,16 +130,19 @@
 	<!-- Lessons Learned -->
 	<div class="top-anchored light row">
 		<h2>Lessons Learned</h2>
-		<div class="horizontal centered">
+		<div class="horizontal centered padding-bottom-2">
 			<div class="big-side">
 				<p>
-					Hive is definitely the project I am the most proud of. I am extremely grateful to have taken the opportunity
+					Hive is definitely the project I am the most proud of. I am extremely grateful to have taken the
+					opportunity
 					to work on it, and with other talented developers in the Beat Saber community.
 					<br><br>
-					The biggest learning experience for me was learning all about ASP.NET Core and back-end development - all
+					The biggest learning experience for me was learning all about ASP.NET Core and back-end development
+					- all
 					while I was working on it.
 					<br><br>
-					Developing Hive has also taught me alot when it comes to writing quality code, mostly thanks to the extreme
+					Developing Hive has also taught me alot when it comes to writing quality code, mostly thanks to the
+					extreme
 					quality guidelines.
 				</p>
 			</div>
@@ -160,7 +178,7 @@
 			</div>
 		</div>
 	</div>
-
+	<script src="../main.js"></script>
 </body>
 
 </html>

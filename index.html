@@ -2,15 +2,10 @@
 <html>
 
 <head>
+	<meta charset="UTF-8">
 	<title>Caeden Statia</title>
-	<link rel="icon" href="caeden.png" />
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-		type="text/css" />
-	<link rel="stylesheet" href="main.css" />
-	<script src="https://kit.fontawesome.com/eb5efa23ff.js" crossorigin="anonymous"></script>
-</head>
 
-<body>
+	<!--Meta tags should always be placed in the head-->
 	<!--Discord Embed Information-->
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="caeden.dev" />
@@ -19,6 +14,15 @@
 	<meta property="og:image" content="https://caeden.dev/caeden.png" />
 	<!--Website-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
+
+	<link rel="icon" href="caeden.png" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+		type="text/css" />
+	<link rel="stylesheet" href="main.css" />
+	<script src="https://kit.fontawesome.com/eb5efa23ff.js" crossorigin="anonymous"></script>
+</head>
+
+<body onclick="expandImage(event)">
 
 	<!--Skip Nav-->
 	<a class="skip-nav" href="#about">
@@ -61,25 +65,35 @@
 			<h2>Hi! I'm <span class="accent">Caeden</span>.</h2>
 
 			<p>
-				I'm a 20 year old C# developer from the lovely state of Washington, interested in game and back-end development.
+				I'm a 20 year old C# developer from the lovely state of Washington, interested in game and back-end
+				development.
 				<br><br>
 				My life as a programmer began very young, when I was introduced to <a
 					href="https://en.wikipedia.org/wiki/Kodu_Game_Lab" target="_blank" rel="noopener noreferrer"
-					class="link"><span id="consolas">Kodu Game Lab</span></a> by my dad. The visual programming interface helped
-				me grasp basic concepts, and the 3D level and code editor let me create whatever I wanted. It was a really
+					class="link"><span id="consolas">Kodu Game Lab</span></a> by my dad. The visual programming
+				interface helped
+				me grasp basic concepts, and the 3D level and code editor let me create whatever I wanted. It was a
+				really
 				creative tool to help kids learn to program!
 				<br><br>
-				In High School, I took many Computer Science courses, up to AP Computer Science Principles. During the class,
+				In High School, I took many Computer Science courses, up to AP Computer Science Principles. During the
+				class,
 				the teacher had us compete in a national competition by the <a href="https://academy.cs.cmu.edu/"
-					target="_blank" rel="noopener noreferrer" class="link"><span id="consolas">Carnegie Mellon University CS
-						Academy.</span></a> We were tasked to create something with their web-based Python environment. I chose to
-				create a game, a recreation of <a href="https://superhexagon.com/" target="_blank" rel="noopener noreferrer"
-					class="link"><span id="consolas">Super Hexagon.</span></a> A few months later, it was revealed that I had won
-				1st place in the competition. My prize? A classroom set of stickers! I realized that my skills in programming is
+					target="_blank" rel="noopener noreferrer" class="link"><span id="consolas">Carnegie Mellon
+						University CS
+						Academy.</span></a> We were tasked to create something with their web-based Python environment.
+				I chose to
+				create a game, a recreation of <a href="https://superhexagon.com/" target="_blank"
+					rel="noopener noreferrer" class="link"><span id="consolas">Super Hexagon.</span></a> A few months
+				later, it was revealed that I had won
+				1st place in the competition. My prize? A classroom set of stickers! I realized that my skills in
+				programming is
 				being rewarded, even if it was a bunch of stickers.
 				<br><br>
-				Ever since, my free time has been spent creating open-source projects. I've also had opportunities to work with
-				many wonderful developers. Not only did I have a blast doing all of this, but these experiences have all shaped
+				Ever since, my free time has been spent creating open-source projects. I've also had opportunities to
+				work with
+				many wonderful developers. Not only did I have a blast doing all of this, but these experiences have all
+				shaped
 				me into a better developer.
 			</p>
 
@@ -88,7 +102,7 @@
 	</div>
 
 	<!--Skills-->
-	<div class="centered horizontal light row">
+	<div class="centered horizontal light row skills">
 		<div class="centered small-side">
 			<h1>Skills</h1>
 		</div>
@@ -99,27 +113,25 @@
 			</h4>
 
 			<div class="top-anchored big-side" id="consolas">
-				<div class="centered horizontal-spaced">
-					<li>
+				<div class="grid-container">
+					<div class="grid-item">
 						<h3>C#</h3>
-					</li>
-					<li>
+					</div>
+					<div class="grid-item">
 						<h3>Unity</h3>
-					</li>
-					<li>
-						<h3>.NET 5-8</h3>
-					</li>
-				</div>
-				<div class="centered horizontal-spaced">
-					<li>
+					</div>
+					<div class="grid-item">
+						<h3>.NET 5&#8209;8</h3><!--Prevent 5-8 from line breaking-->
+					</div>
+					<div class="grid-item">
 						<h3>ASP.NET Core</h3>
-					</li>
-					<li>
+					</div>
+					<div class="grid-item">
 						<h3>Entity Framework</h3>
-					</li>
-					<li>
+					</div>
+					<div class="grid-item">
 						<h3>Git</h3>
-					</li>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -138,8 +150,9 @@
 			<h1 class="accent" id="consolas">ChroMapper</h1>
 
 			<h4>
-				An open-source beatmap editor for the popular rhythm game <a href="https://beatsaber.com" target="_blank"
-					rel="noopener noreferrer" class="link"><span id="consolas">Beat Saber.</span></a>
+				An open-source beatmap editor for the popular rhythm game <a href="https://beatsaber.com"
+					target="_blank" rel="noopener noreferrer" class="link"><span
+						id="consolas">Beat&nbsp;Saber.</span></a> <!--&nbsp; will prevent line breaking-->
 				<br><br>
 				ChroMapper has been my largest and most successful project yet, with thousands of users and dozens of
 				contributors.
@@ -233,6 +246,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="main.js"></script>
 
 </body>
 
