@@ -26,10 +26,6 @@ iframe {
     box-shadow: 0px 0px 8px 0px black;
 }
 
-iframe.sticky {
-    position: sticky;
-}
-
 h1 {
     font-size: 72px;
     text-shadow: 2px 2px 3px black;
