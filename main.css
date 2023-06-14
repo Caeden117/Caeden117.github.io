@@ -48,7 +48,8 @@ p {
 }
 
 img {
-    image-rendering: optimizeQuality;
+    /* This property is deprecated/obsolete and should not be used.*/
+    /* image-rendering: optimizeQuality;*/
 
     --shadow-color: rgba(0, 0, 0, 0.33);
     --shadow-size: 8px;
@@ -116,7 +117,7 @@ a:active {
     cursor: pointer;
 }
 
-.expandable:active {
+.expanded, .expandable.expanded:hover {
     --shadow-color: rgba(0, 0, 0, 1);
     --shadow-size: 64px;
 
@@ -366,6 +367,10 @@ a:active {
     min-height: auto;
 }
 
+.skills.height-cancel {
+    height: auto;
+}
+
 .skills li {
     margin: 1rem;
 }
@@ -387,7 +392,7 @@ a:active {
     content: "•";
     position: absolute;
     top: -10px;
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-family: 'Arial', sans-serif;
 }
 

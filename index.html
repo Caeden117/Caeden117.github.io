@@ -4,14 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Caeden Statia</title>
-	<link rel="icon" href="caeden.png" />
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-		type="text/css" />
-	<link rel="stylesheet" href="main.css" />
-	<script src="https://kit.fontawesome.com/eb5efa23ff.js" crossorigin="anonymous"></script>
-</head>
 
-<body>
+	<!--Meta tags should always be placed in the head-->
 	<!--Discord Embed Information-->
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="caeden.dev" />
@@ -20,6 +14,15 @@
 	<meta property="og:image" content="https://caeden.dev/caeden.png" />
 	<!--Website-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
+
+	<link rel="icon" href="caeden.png" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+		type="text/css" />
+	<link rel="stylesheet" href="main.css" />
+	<script src="https://kit.fontawesome.com/eb5efa23ff.js" crossorigin="anonymous"></script>
+</head>
+
+<body onclick="expandImage(event)">
 
 	<!--Skip Nav-->
 	<a class="skip-nav" href="#about">
@@ -118,7 +121,7 @@
 						<h3>Unity</h3>
 					</div>
 					<div class="grid-item">
-						<h3>.NET 5-8</h3>
+						<h3>.NET 5&#8209;8</h3><!--Prevent 5-8 from line breaking-->
 					</div>
 					<div class="grid-item">
 						<h3>ASP.NET Core</h3>
@@ -149,7 +152,7 @@
 			<h4>
 				An open-source beatmap editor for the popular rhythm game <a href="https://beatsaber.com"
 					target="_blank" rel="noopener noreferrer" class="link"><span
-						id="consolas">Beat&nbsp;Saber.</span></a> <!--&nbsp; will prevent the line from breaking-->
+						id="consolas">Beat&nbsp;Saber.</span></a> <!--&nbsp; will prevent line breaking-->
 				<br><br>
 				ChroMapper has been my largest and most successful project yet, with thousands of users and dozens of
 				contributors.
@@ -243,6 +246,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="main.js"></script>
 
 </body>
 

@@ -10,7 +10,7 @@
 	<script src="https://kit.fontawesome.com/eb5efa23ff.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onclick="expandImage(event)">
 	<!--Discord Embed Information-->
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="caeden.dev" />
@@ -42,7 +42,8 @@
 
 		<div class="horizontal centered">
 			<div id="large-link">
-				<a href="https://github.com/Caeden117/ChroMapper" target="_blank" rel="noopener noreferrer" class="link">
+				<a href="https://github.com/Caeden117/ChroMapper" target="_blank" rel="noopener noreferrer"
+					class="link">
 					<i class="fab fa-github" id="icon"></i><span id="consolas">Source Code</span>
 				</a>
 			</div>
@@ -61,16 +62,23 @@
 		<div class="horizontal centered">
 			<div class="big-side">
 				<p>
-					ChroMapper was started in February of 2019 between a friend and I. ChroMapper was formed out of a need of an
-					improved, community made map editor. At the time, the existing map editors lacking in some areas, from general
-					usability to performance constraints. We believed we could create a map editor that did things better, while
+					ChroMapper was started in February of 2019 between a friend and I. ChroMapper was formed out of a
+					need of an
+					improved, community made map editor. At the time, the existing map editors lacking in some areas,
+					from general
+					usability to performance constraints. We believed we could create a map editor that did things
+					better, while
 					introducing new features created from the ever-expanding Beat Saber modding scene.
 					<br><br>
-					We chose to write ChroMapper in the Unity engine for a few reasons: It would match the engine used by Beat
-					Saber, Unity was something both of us had prior experience in, and C# was a language we were also familiar with.
+					We chose to write ChroMapper in the Unity engine for a few reasons: It would match the engine used
+					by Beat
+					Saber, Unity was something both of us had prior experience in, and C# was a language we were also
+					familiar with.
 					<br><br>
-					ChroMapper has become the primary third party map editor for the Beat Saber mapping community. Thousands of users
-					use my software to create maps for Beat Saber and interact with eachother through the new multiplayer component.
+					ChroMapper has become the primary third party map editor for the Beat Saber mapping community.
+					Thousands of users
+					use my software to create maps for Beat Saber and interact with eachother through the new
+					multiplayer component.
 				</p>
 			</div>
 
@@ -81,23 +89,29 @@
 	</div>
 
 	<!-- Problems -->
-	<div class="top-anchored light row">
+	<div class=" top-anchored light row">
 		<h2>Problems and Growing Pains</h2>
 		<div class="horizontal centered">
 			<div class="small-side">
 				<img class="expandable" src="../content/chromapper4.png" />
 			</div>
 
-			<div class="big-side">
+			<div class=" big-side">
 				<p>
-					Over the course of ChroMapper's development, I ran into multiple issues that turned into large learning
-					experiences. I never knew how large the project would become, so I quickly learned the importance of
+					Over the course of ChroMapper's development, I ran into multiple issues that turned into
+					large learning
+					experiences. I never knew how large the project would become, so I quickly learned the
+					importance of
 					organizing and maintaining code.
 					<br><br>
-					The biggest lessons that have come out of developing ChroMapper were in real-time optimization. Multiple times
-					in development, I had to sit down and rewrite systems that were simply unoptimized. From object rendering to
-					mouse raycasting, I've examined and optimized code which allows ChroMapper to handle larger Beat Saber
-					levels <i>and</i> run on lower powered hardware. We eventually got ChroMapper to run on devices such as
+					The biggest lessons that have come out of developing ChroMapper were in real-time
+					optimization. Multiple times
+					in development, I had to sit down and rewrite systems that were simply unoptimized. From
+					object rendering to
+					mouse raycasting, I've examined and optimized code which allows ChroMapper to handle larger
+					Beat Saber
+					levels <i>and</i> run on lower powered hardware. We eventually got ChroMapper to run on
+					devices such as
 					Chromebooks, the new Steam Deck, and Android devices. Cool stuff!
 				</p>
 			</div>
@@ -110,12 +124,16 @@
 		<div class="horizontal centered">
 			<div class="big-side">
 				<p>
-					ChroMapper is easily the largest project I've worked on, and the challenges I faced certainly morphed me into
+					ChroMapper is easily the largest project I've worked on, and the challenges I faced
+					certainly morphed me into
 					a much better developer.
 					<br><br>
-					Developing ChroMapper gave me invaluable insight into the structure of a project, optimizing for real-time
-					performance, and managing a large open source project. While I will certainly not call ChroMapper my best
-					work, it represents over 4 years of my growth as a developer. And for that, I am forever thankful.
+					Developing ChroMapper gave me invaluable insight into the structure of a project, optimizing
+					for real-time
+					performance, and managing a large open source project. While I will certainly not call
+					ChroMapper my best
+					work, it represents over 4 years of my growth as a developer. And for that, I am forever
+					thankful.
 				</p>
 			</div>
 
@@ -150,7 +168,7 @@
 			</div>
 		</div>
 	</div>
-
+	<script src="../main.js"></script>
 </body>
 
 </html>
