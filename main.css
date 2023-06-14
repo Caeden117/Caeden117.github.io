@@ -369,14 +369,7 @@ a:active {
     padding-bottom: 2rem;
 }
 
-.height-cancel {
-    min-height: auto;
-}
-
 /* Skills section */
-.skills.height-cancel {
-    height: auto;
-}
 
 .skills li {
     margin: 1rem;
