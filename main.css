@@ -346,16 +346,56 @@ a:active {
     .big-side {
         width: 100%;
         height: 66.67%;
-        margin: 5%;
+        margin-bottom: 5%;
     }
 
     .small-side {
         height: 33.33%;
         width: 100%;
-        margin: 5%;
+        margin-top: 5%;
     }
 
     #large-link {
         margin: 2% 0%;
     }
 }
+
+/* Responsiveness */
+/* Only take up the height that's needed */
+.height-cancel {
+    min-height: auto;
+}
+
+.skills li {
+    margin: 1rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: start;
+}
+
+.grid-item {
+    /* You can add any other styling to the grid items here */
+    position: relative;
+}
+
+.grid-item::before {
+    content: "•";
+    position: absolute;
+    top: -10px;
+    font-size: 1.2em;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Skills grid switches to 2 items per row */
+@media (max-width: 425px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsiveness */
