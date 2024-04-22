@@ -101,8 +101,8 @@ a:active {
 .link:hover {
     padding: 2px 7.5px;
 
-    border-color: #5FD849;
-    color: #5FD849;
+    border-color: #61A2C4;
+    color: #61A2C4;
 
     filter: drop-shadow(0px 0px 2px black);
 
@@ -204,7 +204,7 @@ a:active {
 }
 
 .accent {
-    color: #5FD849;
+    color: #61A2C4;
     -webkit-text-stroke: 1px black;
 }
 
@@ -290,8 +290,8 @@ a:active {
 }
 
 .button:active {
-    background-image: radial-gradient(circle, lime, rgb(75, 75, 75));
-    background-color: lime;
+    background-image: radial-gradient(circle, #61A2C4, rgb(75, 75, 75));
+    background-color: #61A2C4;
     color: black;
     text-shadow: none;
 }
@@ -315,8 +315,8 @@ a:active {
 .skip-nav:focus {
     transform: translateY(0%);
 
-    border-color: #5FD849;
-    color: #5FD849;
+    border-color: #61A2C4;
+    color: #61A2C4;
 
     filter: drop-shadow(0px 0px 2px black);
 }
@@ -402,7 +402,7 @@ a:active {
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1100px) {
     /* Hide all projects from top-bar */
     .projects {
         display: none;
