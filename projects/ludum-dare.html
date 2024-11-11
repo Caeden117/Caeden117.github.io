@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Ludum Dare Projects | Caeden Statia</title>
+
+	<!--Discord Embed Information-->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="caeden.dev" />
+	<meta property="og:description" content="Aspiring Software Developer" />
+	<meta property="og:url" content="https://caeden.dev/" />
+	<meta property="og:image" content="https://caeden.dev/caeden.png" />
+	<!--Website-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
+
+	<link rel="icon" href="../caeden.png" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+		type="text/css" />
+	<link rel="stylesheet" href="../main.css" />
+	<script src="https://kit.fontawesome.com/eb5efa23ff.js" crossorigin="anonymous"></script>
+</head>
+
+<body onclick="expandImage(event)">
+
+	<!--Skip Nav-->
+	<a class="skip-nav" href="#about">
+		<h2>
+			Skip Navigation
+		</h2>
+	</a>
+
+	<!--Top Bar-->
+	<iframe src="../top-bar.html" title="Top Bar Navigation"></iframe>
+
+	<!--Header-->
+	<div class="centered light row" id="header">
+		<h1 class="accent">Ludum Dare</h1>
+		<hp id="consolas">
+			I've participated in 5 
+            <a href="https://ldjam.com/" target="_blank" rel="noopener noreferrer" class="link">Ludum Dare</a>
+            game jame since September of 2022.
+			<br><br>
+			The skills I've learned in these jams have allowed me to finish a few high-ranked games to Ludum Dare.
+		</hp>
+
+		<div class="horizontal centered">
+			<div id="large-link">
+				<a href="https://github.com/Caeden17/SoldByWizards" target="_blank" rel="noopener noreferrer"
+					class="link">
+					<i class="fab fa-github" id="icon"></i><span id="consolas">Source Code</span>
+				</a>
+			</div>
+
+			<div id="large-link">
+				<a href="https://legoandmars.itch.io/sold-by-wizards" target="_blank" rel="noopener noreferrer" class="link">
+					<i class="fas fa-download" id="icon"></i><span id="consolas">Download</span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Goal and Explanation -->
+	<div class="top-anchored dark row" id="about">
+		<h2>Goal and Explanation</h2>
+		<div class="horizontal centered padding-bottom-2">
+			<div class="big-side">
+				<p>
+					Game jams were always something I felt a little intimidated by.
+                    With a short amount of time, you are expected to create a complete game with a gameplay loop, passable visuals and audio, playable, and bug free.
+                    And most of all, going through the motions of game development within such a short time can get very stressful!
+                    <br><br>
+                    Ludum Dare is a jam which encourages collaboration, so it comes natural that I've had to work with people. I've teamed up with several friends of mine throughout these game jams. Notable partners include my good friends
+                    <a href="https://bobbie.dev/" target="_blank" rel="noopener noreferrer" class="link" id="consolas">Bobbie</a>,
+                    <a href="https://bsky.app/profile/plusonerabbit.bsky.social" target="_blank" rel="noopener noreferrer" class="link" id="consolas">Rabbit</a>, and
+                    <a href="https://auros.nexus/" target="_blank" rel="noopener noreferrer" class="link" id="consolas">Auros</a>, however I've worked with several other friends over the course of my game jam adventure.
+                    <br><br>
+                    Currently, I've exclusively used the Unity engine to create my games. I am the most familiar and most productive in Unity, however considerations have been given to Godot for future projects.
+                </p>
+			</div>
+
+			<div class="small-side">
+				<img class="expandable" src="../content/soldbywizards1.jpg" />
+			</div>
+		</div>
+	</div>
+
+	<!-- Problems -->
+	<div class=" top-anchored light row">
+		<h2>Problems and Growing Pains</h2>
+		<div class="horizontal centered padding-bottom-2">
+			<div class="small-side">
+				<img class="expandable" src="../content/soldbywizards2.png" />
+			</div>
+
+			<div class=" big-side">
+				<p>
+					Having not participated in any game jam until Ludum Dare, I had to learn time management and project scoping very quickly.
+                    Fortunately, my partners in crime were similarly inexperienced in game jams, so it was a collaborative learning process for all of us.
+                    <br><br>
+                    With each Ludum Dare game jam came similar and unique challenges to overcome.
+                    We've had projects suffer from over-scoping, projects suffer from not having enough people, projects suffer from having <i>too many</i> people, and projects suffering from the lack of a dedicated 3D artist, VFX, or composer.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Lessons Learned -->
+	<div class="top-anchored dark row">
+		<h2>Lessons Learned</h2>
+		<div class="horizontal centered padding-bottom-2">
+			<div class="big-side">
+				<p>
+					With each Ludum Dare game jam I've participated in, the more I learn about the true game development process, and the more refined I become for future jams.
+                    <br><br>
+                    These jams have allowed me to learn small team communication and collaboration, properly managing my time and scoping my projects, and working under time crunches to push a finished product.
+                    <br><br>
+                    These lessons have allowed me to produce higher quality games, including some that have ranked fairly highly.
+				</p>
+			</div>
+
+			<div class="small-side">
+				<img class="expandable" src="../content/soldbywizards3.png" />
+			</div>
+		</div>
+	</div>
+
+    <!--Game Entires-->
+    <div class="top-anchored light row">
+		<h1 class="accent">Game Entries</h1>
+
+		<h3>Here is a list of the games I've submitted to Ludum Dare.</h3>
+	</div>
+
+    <!--Lunaculture-->
+	<div class="centered horizontal dark row">
+		<div class="top-anchored big-side">
+			<h1 class="accent" id="consolas">Lunaculture</h1>
+
+			<h4>
+				My first game jam project submitted to the 52nd
+				<a href="https://ldjam.com" target="_blank" rel="noopener noreferrer" class="link" id="consolas">
+					Ludum&nbsp;Dare</a>. <!--&nbsp; will prevent line breaking-->
+				<br><br>
+				Lunaculture is also my first dive into game jams and time management. 
+			</h4>
+
+			<div class="centered">
+				<div id="large-link">
+					<a href="projects/lunaculture.html" rel="noopener noreferrer" class="link">
+						<span id="consolas">View Project</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="centered small-side">
+			<img class="expandable" src="content/lunaculture.png" />
+		</div>
+	</div>
+
+	<!--Liver Die-->
+	<div class="centered horizontal light row">
+		<div class="centered small-side">
+			<img class="expandable" src="content/liver-die2.png" />
+		</div>
+
+		<div class="top-anchored big-side">
+			<h1 class="accent" id="consolas">Liver Die</h1>
+
+			<h4>
+				My second game jam project submitted to the 53rd
+				<a href="https://ldjam.com" target="_blank" rel="noopener noreferrer" class="link" id="consolas">
+					Ludum&nbsp;Dare</a>. <!--&nbsp; will prevent line breaking-->
+				<br><br>
+				A larger scale team project that culminated in great fun and a well received game.
+			</h4>
+
+			<div class="centered">
+				<div id="large-link">
+					<a href="projects/liver-die.html" rel="noopener noreferrer" class="link">
+						<span id="consolas">View Project</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Cache Me If You Can-->
+	<div class="centered horizontal dark row">
+		<div class="top-anchored big-side">
+			<h1 class="accent" id="consolas">Cache Me If You Can</h1>
+
+			<h4>
+				My third game jam project submitted to the 54th
+				<a href="https://ldjam.com" target="_blank" rel="noopener noreferrer" class="link" id="consolas">
+					Ludum&nbsp;Dare</a>. <!--&nbsp; will prevent line breaking-->
+				<br><br>
+				A healthy reminder of how turbulent game development can be.
+			</h4>
+
+			<div class="centered">
+				<div id="large-link">
+					<a href="projects/cmiyc.html" rel="noopener noreferrer" class="link">
+						<span id="consolas">View Project</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="centered small-side">
+			<img class="expandable" src="content/cmiyc.png" />
+		</div>
+	</div>
+
+    <!--Sold By Wizards-->
+    <div class="centered horizontal light row">
+		<div class="centered small-side">
+			<img class="expandable" src="content/soldbywizards.png" />
+		</div>
+
+		<div class="top-anchored big-side">
+			<h1 class="accent" id="consolas">Sold By Wizards</h1>
+
+			<h4>
+				My fourth game jam project submitted to the 55th
+				<a href="https://ldjam.com" target="_blank" rel="noopener noreferrer" class="link" id="consolas">
+					Ludum&nbsp;Dare</a>. <!--&nbsp; will prevent line breaking-->
+				<br><br>
+				A really fun event creating my best and most polished game jam project to date.
+			</h4>
+
+			<div class="centered">
+				<div id="large-link">
+					<a href="projects/sold-by-wizards.html" rel="noopener noreferrer" class="link">
+						<span id="consolas">View Project</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    <!--Worlds Tiniest Desktop Pets-->
+	<div class="centered horizontal dark row">
+		<div class="top-anchored big-side">
+			<h1 class="accent" id="consolas">Worlds Tiniest Desktop Pets</h1>
+
+			<h4>
+				My third game jam project submitted to the 54th
+				<a href="https://ldjam.com" target="_blank" rel="noopener noreferrer" class="link" id="consolas">
+					Ludum&nbsp;Dare</a>. <!--&nbsp; will prevent line breaking-->
+				<br><br>
+				A healthy reminder of how turbulent game development can be.
+			</h4>
+
+			<div class="centered">
+				<div id="large-link">
+					<a href="projects/cmiyc.html" rel="noopener noreferrer" class="link">
+						<span id="consolas">View Project</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="centered small-side">
+			<img class="expandable" src="content/cmiyc.png" />
+		</div>
+	</div>
+
+	<!--Contact-->
+	<div class="top-anchored light row">
+		<h1 class="accent">Let's collaborate.</h1>
+		<h3>Feel free to reach out to ask questions, connect, or if you want to work with me.</h3>
+
+		<div class="horizontal centered">
+			<div id="large-link">
+				<a href="https://github.com/Caeden117" target="_blank" rel="noopener noreferrer" class="link">
+					<i class="fab fa-github" id="icon"></i><span id="consolas">GitHub</span>
+				</a>
+			</div>
+
+			<div id="large-link">
+				<a href="mailto:caeden.s@outlook.com" target="_blank" rel="noopener noreferrer" class="link">
+					<i class="fas fa-envelope " id="icon"></i><span id="consolas">caeden.s@outlook.com</span>
+				</a>
+			</div>
+
+			<div id="large-link">
+				<a href="https://twitter.com/The_Caeden117" target="_blank" rel="noopener noreferrer" class="link">
+					<i class="fab fa-twitter" id="icon"></i><span id="consolas">Twitter</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<script src="../main.js"></script>
+</body>
+
+</html>
