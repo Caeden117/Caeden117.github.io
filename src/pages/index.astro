@@ -1,0 +1,24 @@
+---
+import DrawnImage from '@components/DrawnImage.astro';
+import name0 from '@/images/name0.png';
+import name1 from '@/images/name1.png';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<div style="display: flex; justify-content: center; align-items: center; min-height: 100vh;">
+			<DrawnImage 
+				image1={name0}
+				image2={name1} 
+				alt="Caeden Statia"
+			/>
+		</div>
+	</body>
+</html>

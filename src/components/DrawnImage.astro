@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+
+const { image1, image2, alt, ...attrs } = Astro.props;
+---
+<div class="toggle-image-wrapper">
+    <Image class="toggle-image image1" src={image1} alt={alt} {...attrs}/>
+    <Image class="toggle-image image2" src={image2} alt={alt} {...attrs}/>
+</div>
+
+<style>
+.toggle-image-wrapper {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+.toggle-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.2s;
+    animation-duration: 0.666s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1, end);
+}
+.toggle-image.image1 {
+    animation-name: toggleImage1;
+}
+.toggle-image.image2 {
+    animation-name: toggleImage2;
+}
+@keyframes toggleImage1 {
+    0% { opacity: 1; }
+    49.9% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes toggleImage2 {
+    0% { opacity: 0; }
+    49.9% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 1; }
+}
+</style>
