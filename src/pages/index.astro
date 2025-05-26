@@ -1,5 +1,7 @@
 ---
 import DrawnImage from '@components/DrawnImage.astro';
+import "@styles/global.css";
+
 import name0 from '@/images/name0.png';
 import name1 from '@/images/name1.png';
 ---
@@ -13,7 +15,7 @@ import name1 from '@/images/name1.png';
 		<title>Astro</title>
 	</head>
 	<body>
-		<div class="items-center object-cover">
+		<div class="w-screen h-screen flex place-content-center">
 			<DrawnImage 
 				image1={name0}
 				image2={name1} 

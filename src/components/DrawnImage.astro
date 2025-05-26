@@ -1,23 +1,19 @@
 ---
 import { Image } from "astro:assets";
+import "@styles/global.css";
 
 const { image1, image2, alt, ...attrs } = Astro.props;
 ---
-<div class="toggle-image-wrapper">
-    <Image class="toggle-image image1" src={image1} alt={alt} {...attrs}/>
-    <Image class="toggle-image image2" src={image2} alt={alt} {...attrs}/>
+<div class="inset-0 grow">
+    <Image class="toggle-image image1 object-contain" src={image1} alt={alt} {...attrs}/>
+    <Image class="toggle-image image2 object-contain" src={image2} alt={alt} {...attrs}/>
 </div>
 
 <style>
-.toggle-image-wrapper {
-    position: relative;
-    width: fit-content;
-    height: fit-content;
-}
 .toggle-image {
     position: absolute;
-    top: 0;
-    left: 0;
+    height: 100%;
+    width: 100%;
     opacity: 0;
     transition: opacity 0.2s;
     animation-duration: 0.666s;
