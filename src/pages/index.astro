@@ -1,9 +1,11 @@
 ---
 import DrawnImage from '@components/DrawnImage.astro';
+import LinksArea from '@components/LinksArea.astro';
 import "@styles/global.css";
 
-import name0 from '@/images/name0.png';
-import name1 from '@/images/name1.png';
+import { Image } from 'astro:assets';
+import avatar from '@/images/icon.png';
+
 ---
 
 <html lang="en">
@@ -15,12 +17,19 @@ import name1 from '@/images/name1.png';
 		<title>Astro</title>
 	</head>
 	<body>
-		<div class="w-screen h-screen flex place-content-center">
-			<DrawnImage 
-				image1={name0}
-				image2={name1} 
-				alt="Caeden Statia"
-			/>
+		<div class="mx-auto flex h-screen w-full max-w-128 flex-row items-center justify-center">
+			<div class="flex items-center gap-6 pt-8 pb-8">
+				<Image class="size-64 rounded-full width-600px height-600px" alt="Harpy avatar :>" src={avatar} />
+			</div>
+			<div class="flex flex-col items-start gap-4">
+				<h1 class="text-4xl font-bold">Caeden Statia</h1>
+				<LinksArea
+					twitter="https://twitter.com/The_Caeden117"
+					bluesky="https://bsky.app/profile/caeden.dev"
+					github="https://github.com/Caeden117"
+				/>
+			</div>
+			
 		</div>
 	</body>
 </html>
