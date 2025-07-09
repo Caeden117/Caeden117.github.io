@@ -1,7 +1,15 @@
 import { navigate } from "astro:transitions/client";
 
 export default function useScrollObserver(navigateOnBottom: string | null, navigateOnTop: string | null): void {
+    const currentUrl = window.location.pathname;
     const handleScroll = (wheelEvent: WheelEvent) => {
+        // Early return if the current URL does not match the window location
+        // This prevents the scroll observer from triggering on other pages
+        // It is frankly kinda stupid but whatever
+        if (currentUrl !== window.location.pathname) {
+            return;
+        }
+
         const scrollDirection = wheelEvent.deltaY;
 
         const scrollY = window.scrollY;
