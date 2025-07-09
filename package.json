@@ -14,6 +14,10 @@
     "@tailwindcss/vite": "^4.1.7",
     "astro": "^5.11.0",
     "astro-icon": "^1.1.5",
+    "lodash-es": "^4.17.21",
     "tailwindcss": "^4.1.7"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.12"
   }
 }

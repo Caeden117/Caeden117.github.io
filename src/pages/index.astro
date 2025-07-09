@@ -1,20 +1,20 @@
 ---
+import CommonHead from '@/components/CommonHead.astro';
 import DrawnImage from '@components/DrawnImage.astro';
 import LinksArea from '@components/LinksArea.astro';
 import "@styles/global.css";
 
 import { Image } from 'astro:assets';
 import avatar from '@/images/icon.png';
-
 ---
+<script>
+import useScrollObserver from '@/scripts/ScrollObserver.client.ts';
+useScrollObserver("/under-construction", null);
+</script>
 
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<CommonHead title="Caeden Statia" description="Aspiring Software Developer"/>
 	</head>
 	<body>
 		<div class="mx-auto flex h-screen w-full max-w-128 flex-row items-center justify-center">
