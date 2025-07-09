@@ -13,25 +13,35 @@
     initial-value: 1;
 }
 
+@property --contact-card-transform-y {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 0%;
+}
+
 @keyframes blurAndFadeOut {
   0% {
     --contact-card-blur: 0px;
     --contact-card-opacity: 1;
+    --contact-card-transform-y: 0%;
     pointer-events: auto;
   }
   50% {
     --contact-card-blur: 0px;
     --contact-card-opacity: 1;
+    --contact-card-transform-y: 0%;
     pointer-events: auto;
   }
   75% {
     --contact-card-blur: 24px;
     --contact-card-opacity: 0;
+    --contact-card-transform-y: -25%;
     pointer-events: none;
   }
   100% {
     --contact-card-blur: 24px;
     --contact-card-opacity: 0;
+    --contact-card-transform-y: -25%;
     pointer-events: none;
   }
 }
@@ -44,4 +54,5 @@
 .contact-card {
     filter: blur(var(--contact-card-blur));
     opacity: var(--contact-card-opacity);
+    transform: translateY(var(--contact-card-transform-y));
 }
