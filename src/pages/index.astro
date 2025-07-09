@@ -2,34 +2,35 @@
 import CommonHead from '@/components/CommonHead.astro';
 import DrawnImage from '@components/DrawnImage.astro';
 import LinksArea from '@components/LinksArea.astro';
-import "@styles/global.css";
 
 import { Image } from 'astro:assets';
 import avatar from '@/images/icon.png';
 ---
-<script>
-import useScrollObserver from '@/scripts/ScrollObserver.client.ts';
-useScrollObserver("/under-construction", null);
-</script>
 
-<html lang="en" transition:animate="slide">
+<html lang="en">
 	<head>
 		<CommonHead title="Caeden Statia" description="Aspiring Software Developer"/>
 	</head>
 	<body>
-		<div class="mx-auto flex h-screen w-full max-w-128 flex-row items-center justify-center">
-			<div class="flex items-center gap-6 pt-8 pb-8">
-				<Image class="size-64 rounded-full width-600px height-600px" alt="Harpy avatar :>" src={avatar} />
+		
+
+		<div class="h-screen w-0 fade-with-scroll">
+			<div class="backdrop-blur-md contact-card fixed top-1/2 left-1/2 -translate-1/2 rounded-xl flex flex-row items-center justify-center">
+				<div class="flex items-center gap-6 pt-8 pb-8">
+					<Image class="size-64 rounded-full width-600px height-600px" alt="Harpy avatar :>" src={avatar} />
+				</div>
+				<div class="flex flex-col items-start gap-4">
+					<h1 class="text-4xl font-bold">Caeden Statia</h1>
+					<LinksArea
+						twitter="https://twitter.com/The_Caeden117"
+						bluesky="https://bsky.app/profile/caeden.dev"
+						github="https://github.com/Caeden117"
+					/>
+				</div>
 			</div>
-			<div class="flex flex-col items-start gap-4">
-				<h1 class="text-4xl font-bold">Caeden Statia</h1>
-				<LinksArea
-					twitter="https://twitter.com/The_Caeden117"
-					bluesky="https://bsky.app/profile/caeden.dev"
-					github="https://github.com/Caeden117"
-				/>
-			</div>
-			
 		</div>
+
+		<div class="w-128 h-screen bg-red-600"/>
+		<div class="w-128 h-screen bg-green-600"/>
 	</body>
 </html>

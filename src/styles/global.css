@@ -1,1 +1,36 @@
 @import "tailwindcss";
+
+@property --contact-card-blur {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 24px;
+}
+
+@property --contact-card-opacity {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+}
+
+@keyframes blurAndFadeOut {
+  50% {
+    --contact-card-blur: 0px;
+    --contact-card-opacity: 1;
+    pointer-events: auto;
+  }
+  75% {
+    --contact-card-blur: 24px;
+    --contact-card-opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.fade-with-scroll {
+    animation: blurAndFadeOut linear;
+    animation-timeline: view();
+}
+
+.contact-card {
+    filter: blur(var(--contact-card-blur));
+    opacity: var(--contact-card-opacity);
+}
