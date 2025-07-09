@@ -6,37 +6,37 @@ const { twitter, bluesky, github, steam, itchdotio, download, other } = Astro.pr
 <div class="flex items-center gap-3">
     {twitter && (
         <a href={twitter} target="_blank" rel="noopener noreferrer" aria-label="Link to Twitter">
-            <Icon name="simple-icons:twitter" class="size-6 text-gray-500 hover:text-blue-700 transition-colors" />
+            <Icon name="simple-icons:twitter" class="size-6 text-(--icon-light) dark:text-(--icon-dark) hover:text-[#1c96e8] transition-colors" />
         </a>
     )}
     {bluesky && (
         <a href={bluesky} target="_blank" rel="noopener noreferrer" aria-label="Link to BlueSky">
-            <Icon name="simple-icons:bluesky" class="size-6 text-gray-500 hover:text-blue-700 transition-colors" />
+            <Icon name="simple-icons:bluesky" class="size-6 text-(--icon-light) dark:text-(--icon-dark) hover:text-[#1181f6] transition-colors" />
         </a>
     )}
     {github && (
         <a href={github} target="_blank" rel="noopener noreferrer" aria-label="Link to GitHub">
-            <Icon name="simple-icons:github" class="size-6 text-gray-500 hover:text-blue-700 transition-colors" />
+            <Icon name="simple-icons:github" class="size-6 text-(--icon-light) dark:text-(--icon-dark)  hover:text-black dark:hover:text-white transition-colors" />
         </a>
     )}
     {itchdotio && (
         <a href={itchdotio} target="_blank" rel="noopener noreferrer" aria-label="Link to Itch.io">
-            <Icon name="simple-icons:itchdotio" class="size-6 text-gray-500 hover:text-blue-700 transition-colors" />
+            <Icon name="simple-icons:itchdotio" class="size-6 text-(--icon-light) dark:text-(--icon-dark) hover:text-[#fa6160] transition-colors" />
         </a>
     )}
     {steam && (
         <a href={steam} target="_blank" rel="noopener noreferrer" aria-label="Link to Steam">
-            <Icon name="simple-icons:steam" class="size-6 text-gray-500 hover:text-blue-700 transition-colors" />
+            <Icon name="simple-icons:steam" class="size-6 text-(--icon-light) dark:text-(--icon-dark) hover:text-[#2894bd] transition-colors" />
         </a>
     )}
     {download && (
         <a href={download} target="_blank" rel="noopener noreferrer" aria-label="Link to a download page">
-            <Icon name="mdi:download" class="size-6 text-gray-500 hover:text-blue-700 transition-colors" />
+            <Icon name="mdi:download" class="size-6 text-(--icon-light) dark:text-(--icon-dark) hover:text-blue-700 transition-colors" />
         </a>
     )}
     {other && (
         <a href={other} target="_blank" rel="noopener noreferrer" aria-label="Link to an external website">
-            <Icon name="mdi:web" class="size-6 text-gray-500 hover:text-blue-700 transition-colors" />
+            <Icon name="mdi:web" class="size-6 text-(--icon-light) dark:text-(--icon-dark) hover:text-blue-700 transition-colors" />
         </a>
     )}
 </div>
