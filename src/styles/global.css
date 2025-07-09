@@ -4,7 +4,7 @@
 @property --contact-card-blur {
     syntax: "<length>";
     inherits: true;
-    initial-value: 24px;
+    initial-value: 0px;
 }
 
 @property --contact-card-opacity {
