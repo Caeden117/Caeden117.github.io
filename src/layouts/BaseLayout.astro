@@ -1,0 +1,39 @@
+---
+import CommonHead from '@/components/CommonHead.astro';
+import LinksArea from '@components/LinksArea.astro';
+
+import { Image } from 'astro:assets';
+
+const { title, subtitle, icon, twitter, bluesky, github, steam, itchdotio, download, other } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<CommonHead title={title} description={subtitle}/>
+	</head>
+	<body class="bg-(--primary-light) dark:bg-(--primary-dark) text-(--content-light) dark:text-(--content-dark)">
+
+		<!--Contact card-->
+		<div class="h-screen w-0 fade-with-scroll">
+			<div class="contact-card fixed top-1/2 left-1/2 -translate-1/2 rounded-xl flex flex-row items-center justify-center">
+				<Image class="size-64 rounded-full max-w-600px max-h-600px aspect-square" alt="Harpy avatar :>" src={icon} />
+				<div class="flex flex-col items-start gap-4">
+					<h1 class="text-4xl font-bold text-shadow-harpy">{title}</h1>
+					<LinksArea
+						twitter={twitter}
+                        bluesky={bluesky}
+                        github={github}
+                        steam={steam}
+                        itchdotio={itchdotio}
+                        download={download}
+                        other={other}
+					/>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex flex-col items-center justify-center gap-32 pt-8 mb-64">
+			<slot/>
+		</div>
+	</body>
+</html>
