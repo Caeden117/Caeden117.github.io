@@ -1,8 +1,11 @@
 ---
-const { title, color } = Astro.props;
+const { title, color, ring } = Astro.props;
 ---
-<div class={`backdrop-blur-md backdrop-saturate-25 inset-ring-4 p-8 rounded-4xl flex flex-col gap-6 items-center justify-center text-center`}>
+<div class={`backdrop-blur-md backdrop-saturate-25 ${ring ? 'inset-ring-4' : ''} p-8 rounded-4xl flex flex-col gap-6 items-center justify-center text-center`}>
+    {title && 
     <h1 class={`text-4xl font-bold`}>{title}</h1>
+    }
+    <slot name="title" />
     <slot/>
 </div>
 

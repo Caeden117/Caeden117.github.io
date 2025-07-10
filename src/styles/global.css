@@ -1,5 +1,28 @@
 @import "tailwindcss";
-@import "./color-schemes.css";
+
+:root {
+  --content-light: #101010;
+  --primary-light: #C8C8C8;
+  --secondary-light: #F3F3F3;
+  --border-light: gray;
+  --highlight-light: #AEAEAE;
+  --active-light: #C0C0C0;
+  --icon-light: #4D4D4D;
+
+  --content-dark: #E0E0E0;
+  --primary-dark: #2E2E2E;
+  --secondary-dark: #0F0F0F;
+  --border-dark: #696969;
+  --highlight-dark: #454545;
+  --active-dark: #696969;
+  --icon-dark: #AEAEAE;
+  
+  --harpy-color: #41a6ff;
+}
+
+@theme {
+  --text-shadow-harpy: 0 2px 4px var(--harpy-color); 
+}
 
 @property --contact-card-blur {
     syntax: "<length>";
@@ -21,6 +44,12 @@
 
 @keyframes blurAndFadeOut {
   0% {
+    --contact-card-blur: 24px;
+    --contact-card-opacity: 0;
+    --contact-card-transform-y: 0%;
+    pointer-events: auto;
+  }
+  1% {
     --contact-card-blur: 0px;
     --contact-card-opacity: 1;
     --contact-card-transform-y: 0%;
@@ -48,6 +77,7 @@
 
 .fade-with-scroll {
     animation: blurAndFadeOut linear;
+    animation-fill-mode: forwards;
     animation-timeline: view();
 }
 
