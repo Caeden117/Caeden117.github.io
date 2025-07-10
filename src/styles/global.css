@@ -43,18 +43,6 @@
 }
 
 @keyframes blurAndFadeOut {
-  0% {
-    --contact-card-blur: 24px;
-    --contact-card-opacity: 0;
-    --contact-card-transform-y: 0%;
-    pointer-events: auto;
-  }
-  1% {
-    --contact-card-blur: 0px;
-    --contact-card-opacity: 1;
-    --contact-card-transform-y: 0%;
-    pointer-events: auto;
-  }
   50% {
     --contact-card-blur: 0px;
     --contact-card-opacity: 1;
@@ -62,12 +50,6 @@
     pointer-events: auto;
   }
   75% {
-    --contact-card-blur: 24px;
-    --contact-card-opacity: 0;
-    --contact-card-transform-y: -25%;
-    pointer-events: none;
-  }
-  100% {
     --contact-card-blur: 24px;
     --contact-card-opacity: 0;
     --contact-card-transform-y: -25%;
