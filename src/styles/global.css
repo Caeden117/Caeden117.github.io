@@ -55,6 +55,12 @@
     --contact-card-transform-y: -25%;
     pointer-events: none;
   }
+  100% {
+    --contact-card-blur: 24px;
+    --contact-card-opacity: 0;
+    --contact-card-transform-y: -25%;
+    pointer-events: none;
+  }
 }
 
 .fade-with-scroll {
