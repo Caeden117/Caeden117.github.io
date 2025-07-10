@@ -4,7 +4,7 @@ import LinksArea from '@components/LinksArea.astro';
 
 import { Image } from 'astro:assets';
 
-const { title, subtitle, icon, twitter, bluesky, github, steam, itchdotio, download, other } = Astro.props;
+const { title, subtitle, icon, twitter, bluesky, linkedin, github, steam, itchdotio, download, other } = Astro.props;
 ---
 
 <html lang="en">
@@ -14,6 +14,7 @@ const { title, subtitle, icon, twitter, bluesky, github, steam, itchdotio, downl
 	<body class="bg-(--primary-light) dark:bg-(--primary-dark) text-(--content-light) dark:text-(--content-dark)">
 
 		<!--Contact card-->
+        <!--Should I abstract this into a component?-->
 		<div class="h-screen w-0 fade-with-scroll">
 			<div class="contact-card fixed top-1/2 left-1/2 -translate-1/2 rounded-xl flex flex-row items-center justify-center">
 				<Image class="size-64 rounded-full max-w-600px max-h-600px aspect-square" alt="Harpy avatar :>" src={icon} />
@@ -22,6 +23,7 @@ const { title, subtitle, icon, twitter, bluesky, github, steam, itchdotio, downl
 					<LinksArea
 						twitter={twitter}
                         bluesky={bluesky}
+                        linkedin={linkedin}
                         github={github}
                         steam={steam}
                         itchdotio={itchdotio}

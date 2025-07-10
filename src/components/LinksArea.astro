@@ -1,7 +1,7 @@
 ---
 import { Icon } from 'astro-icon/components';
 
-const { twitter, bluesky, github, steam, itchdotio, download, other } = Astro.props;
+const { twitter, bluesky, linkedin, github, steam, itchdotio, download, other } = Astro.props;
 ---
 <div class="flex items-center gap-3">
     {twitter && (
@@ -12,6 +12,11 @@ const { twitter, bluesky, github, steam, itchdotio, download, other } = Astro.pr
     {bluesky && (
         <a href={bluesky} target="_blank" rel="noopener noreferrer" aria-label="Link to BlueSky">
             <Icon name="simple-icons:bluesky" class="size-6 text-(--icon-light) dark:text-(--icon-dark) hover:text-[#1181f6] transition-colors" />
+        </a>
+    )}
+    {linkedin && (
+        <a href={linkedin} target="_blank" rel="noopener noreferrer" aria-label="Link to LinkedIn">
+            <Icon name="simple-icons:linkedin" class="size-6 text-(--icon-light) dark:text-(--icon-dark) hover:text-[#0A66C2] transition-colors" />
         </a>
     )}
     {github && (
