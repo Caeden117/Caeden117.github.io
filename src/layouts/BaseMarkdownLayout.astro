@@ -1,0 +1,49 @@
+---
+import type { ImageMetadata } from 'astro';
+import BaseLayout from './BaseLayout.astro';
+import MadeWithArea from '@/components/MadeWithArea.astro';
+import avatar from '@/images/icon.png';
+
+const { frontmatter } = Astro.props;
+
+const { title, subtitle, made_with, twitter, bluesky, linkedin, github, steam, itchdotio, download, other } = frontmatter;
+
+// AAAHHHH
+const icons = import.meta.glob<{default: ImageMetadata}>("@/images/projects/*.{jpeg,jpg,png}");
+const icon_location = `/src/images/projects/${title.toLowerCase().replace(/\s+/g, '-')}.png`;
+const icon = icons[icon_location]() ?? avatar;
+---
+<BaseLayout
+    title={title}
+    subtitle={subtitle}
+    icon={icon}
+    twitter={twitter}
+    bluesky={bluesky}
+    linkedin={linkedin}
+    github={github}
+    steam={steam}
+    itchdotio={itchdotio}
+    download={download}
+    other={other}
+>
+    <MadeWithArea made_with={made_with} slot="contact-card-extra"/>
+    <slot/>
+</BaseLayout>
+
+<style is:global>
+    h1 {
+        font-size: 2.25rem;
+        line-height: calc(2.5 / 2.25);
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        line-height: calc(2 / 1.5);
+        font-weight: 700;
+    }
+
+    p {
+        text-align: left;
+    }
+</style>

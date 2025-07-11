@@ -1,0 +1,36 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const toolToColor: Record<string, string> = {
+    unity: '#000000',
+    csharp: '#239120',
+    godot: '#478cbf',
+    typescript: '#3178C6',
+    astro: '#FF5D01',
+    tailwindcss: '#06B6D4'
+};
+
+const toolToFriendlyName: Record<string, string> = {
+    unity: 'Unity',
+    csharp: 'C#',
+    godot: 'Godot',
+    typescript: 'TypeScript',
+    astro: 'Astro',
+    tailwindcss: 'Tailwind CSS'
+};
+
+const { made_with } = Astro.props;
+const technologies: string[] = made_with.split(' ');
+---
+<div class="flex items-center gap-3">
+    <h2 class="text-xl">Made with</h2>
+    {technologies.map((tech: string) =>
+        <Icon name={`devicon-plain:${tech}`} class={`size-6 text-(--icon-light) dark:text-(--icon-dark) hover:text-[${toolToColor[tech]}] transition-colors`} />
+    )}
+</div>
+
+<style>
+    h2 {
+        font-weight: 400;
+    }
+</style>
