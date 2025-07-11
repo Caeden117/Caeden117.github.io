@@ -42,29 +42,76 @@
     initial-value: 0%;
 }
 
-@keyframes blurAndFadeOut {
+@property --contact-card-pointer-events {
+    syntax: "none | auto";
+    inherits: true;
+    initial-value: "auto";
+}
+
+
+@property --nav-bar-blur {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 0px;
+}
+
+@property --nav-bar-opacity {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 1;
+}
+
+@property --nav-bar-transform-y {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 0%;
+}
+
+@property --nav-bar-pointer-events {
+    syntax: "none | auto";
+    inherits: true;
+    initial-value: "auto";
+}
+
+@keyframes scrollAnimation {
   50% {
     --contact-card-blur: 0px;
     --contact-card-opacity: 1;
     --contact-card-transform-y: 0%;
-    pointer-events: auto;
+    --contact-card-pointer-events: auto;
+
+    --nav-bar-blur: 24px;
+    --nav-bar-opacity: 0;
+    --nav-bar-transform-y: 25%;
+    --nav-bar-pointer-events: none;
   }
   75% {
     --contact-card-blur: 24px;
     --contact-card-opacity: 0;
     --contact-card-transform-y: -25%;
-    pointer-events: none;
+    --contact-card-pointer-events: none;
+
+    --nav-bar-blur: 0px;
+    --nav-bar-opacity: 1;
+    --nav-bar-transform-y: 0%;
+    --nav-bar-pointer-events: auto;
+
   }
   100% {
     --contact-card-blur: 24px;
     --contact-card-opacity: 0;
     --contact-card-transform-y: -25%;
-    pointer-events: none;
+    --contact-card-pointer-events: none;
+
+    --nav-bar-blur: 0px;
+    --nav-bar-opacity: 1;
+    --nav-bar-transform-y: 0%;
+    --nav-bar-pointer-events: auto;
   }
 }
 
 .fade-with-scroll {
-    animation: blurAndFadeOut linear;
+    animation: scrollAnimation linear;
     animation-fill-mode: forwards;
     animation-timeline: view();
 }
@@ -73,4 +120,12 @@
     filter: blur(var(--contact-card-blur));
     opacity: var(--contact-card-opacity);
     transform: translateY(var(--contact-card-transform-y));
+    pointer-events: var(--contact-card-pointer-events);
+}
+
+.nav-bar {
+    filter: blur(var(--nav-bar-blur));
+    opacity: var(--nav-bar-opacity);
+    transform: translateY(var(--nav-bar-transform-y));
+    pointer-events: var(--nav-bar-pointer-events);
 }
