@@ -38,11 +38,12 @@ const projects = Object.values(import.meta.glob('./projects/*.md', { eager: true
 
 	<Panel title="Projects">
 		<h2 class="text-2xl font-bold">Here is a small collection of projects I've worked on.</h2>
-	</Panel>
 
-	{
-		projects.map((project: any) =>
-			<ProjectCard frontmatter={project.frontmatter} url={project.url} />
-		)
-	}
+		{
+			projects.map((project: any) =>
+				<ProjectCard frontmatter={project.frontmatter} url={project.url} />
+			)
+		}
+	</Panel>
+	
 </BaseLayout>
