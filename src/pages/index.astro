@@ -1,10 +1,13 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Panel from '@/components/Panel.astro';
+import ProjectCard from '@/components/ProjectCard.astro';
 import { Image } from 'astro:assets';
 
 import avatar from '@/images/icon.png';
 import harpy from '@/images/harpy.png';
+
+const projects = Object.values(import.meta.glob('./projects/*.md', { eager: true }));
 ---
 <BaseLayout
 	title="Caeden Statia"
@@ -32,4 +35,14 @@ import harpy from '@/images/harpy.png';
 			</div>
 		</div>
 	</Panel>
+
+	<Panel title="Projects">
+		<h2 class="text-2xl font-bold">Here is a small collection of projects I've worked on.</h2>
+	</Panel>
+
+	{
+		projects.map((project: any) =>
+			<ProjectCard frontmatter={project.frontmatter} url={project.url} />
+		)
+	}
 </BaseLayout>

@@ -1,0 +1,40 @@
+---
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+import LinksArea from '@/components/LinksArea.astro';
+import MadeWithArea from '@/components/MadeWithArea.astro';
+import avatar from '@/images/icon.png';
+
+const { frontmatter, url } = Astro.props;
+
+const { title, subtitle, twitter, bluesky, linkedin, github, steam, itchdotio, download, other } = frontmatter;
+
+// AAAHHHH!!!
+const icons = import.meta.glob<{default: ImageMetadata}>("@/images/projects/*.{jpeg,jpg,png}");
+const icon_location = `/src/images/projects/${title.toLowerCase().replace(/\s+/g, '-')}.png`;
+const icon = icons[icon_location]() ?? avatar;
+---
+
+<div class="backdrop-blur-md backdrop-saturate-25 p-8 rounded-4xl flex flex-row gap-6 items-center justify-start w-[500px] lg:w-[1000px]">
+    <a href={url} rel="noopener noreferrer">
+        <Image transition:name={`icon-${title}`} class="size-32 rounded-2xl max-w-600px max-h-600px aspect-square transition-all" loading="eager" alt={`${title} icon`} src={icon} />
+    </a>
+    <div class="flex flex-col items-start gap-2">
+        <a href={url} rel="noopener noreferrer">
+            <h1 class="text-4xl font-bold text-shadow-harpy">{title}</h1>
+        </a>
+        <a href={url} rel="noopener noreferrer">
+            <p class="text-xl">{subtitle}</p>
+        </a>
+        <LinksArea
+            twitter={twitter}
+            bluesky={bluesky}
+            linkedin={linkedin}
+            github={github}
+            steam={steam}
+            itchdotio={itchdotio}
+            download={download}
+            other={other}
+        />
+    </div>
+</div>
