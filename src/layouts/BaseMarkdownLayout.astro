@@ -27,23 +27,31 @@ const icon = icons[icon_location]() ?? avatar;
     other={other}
 >
     <MadeWithArea made_with={made_with} slot="contact-card-extra"/>
-    <slot/>
+
+    <div class="backdrop-blur-md backdrop-saturate-25 p-8 rounded-4xl w-[500px] lg:w-[1000px] gap-4 flex flex-col">
+        <slot/>
+    </div>
 </BaseLayout>
 
 <style is:global>
-    h1 {
+    h1:not(.markdown-ignore) {
         font-size: 2.25rem;
         line-height: calc(2.5 / 2.25);
         font-weight: 700;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
     }
 
-    h2 {
+    h2:not(.markdown-ignore) {
         font-size: 1.5rem;
         line-height: calc(2 / 1.5);
         font-weight: 700;
+        
+        margin-top: 1rem;
+        margin-bottom: 0.25rem;
     }
 
-    p {
+    p:not(.markdown-ignore {
         text-align: left;
     }
 </style>
