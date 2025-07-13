@@ -123,6 +123,14 @@
     pointer-events: var(--contact-card-pointer-events);
 }
 
+.contact-card-compatibility {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .nav-bar {
     filter: blur(var(--nav-bar-blur));
     opacity: var(--nav-bar-opacity);
