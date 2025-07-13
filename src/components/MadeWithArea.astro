@@ -7,7 +7,7 @@ const toolToColor: Record<string, string> = {
     godot: '#478cbf',
     typescript: '#3178C6',
     astro: '#FF5D01',
-    tailwindcss: '#06B6D4'
+    tailwind: '#06B6D4'
 };
 
 const toolToFriendlyName: Record<string, string> = {
@@ -16,7 +16,11 @@ const toolToFriendlyName: Record<string, string> = {
     godot: 'Godot',
     typescript: 'TypeScript',
     astro: 'Astro',
-    tailwindcss: 'Tailwind CSS'
+    tailwind: 'Tailwind CSS'
+};
+
+const toolToIconSet: Record<string, string> = {
+    tailwind: 'mdi'
 };
 
 const { made_with } = Astro.props;
@@ -25,7 +29,8 @@ const technologies: string[] = made_with.split(' ');
 <div class="flex items-center gap-3">
     <h2 class="text-xl markdown-ignore">Made with</h2>
     {technologies.map((tech: string) =>
-        <Icon name={`devicon-plain:${tech}`} class={`size-6 text-(--icon-light) dark:text-(--icon-dark) hover:text-[${toolToColor[tech]}] transition-colors`} />
+
+        <Icon name={`${toolToIconSet[tech] || 'devicon-plain'}:${tech}`} class={`size-6 text-(--icon-light) dark:text-(--icon-dark) hover:text-[${toolToColor[tech]}] transition-colors`} />
     )}
 </div>
 

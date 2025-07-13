@@ -1,18 +1,14 @@
 ---
-import type { ImageMetadata } from 'astro';
 import { Image } from 'astro:assets';
 import LinksArea from '@/components/LinksArea.astro';
-import MadeWithArea from '@/components/MadeWithArea.astro';
 import avatar from '@/images/icon.png';
+import FindProjectIcon from '@/scripts/FindProjectIcon';
 
 const { frontmatter, url } = Astro.props;
 
 const { title, subtitle, twitter, bluesky, linkedin, github, steam, itchdotio, download, other } = frontmatter;
 
-// AAAHHHH!!!
-const icons = import.meta.glob<{default: ImageMetadata}>("@/images/projects/*.{jpeg,jpg,png}");
-const icon_location = `/src/images/projects/${title.toLowerCase().replace(/\s+/g, '-')}.png`;
-const icon = icons[icon_location]() ?? avatar;
+const icon = FindProjectIcon(title, avatar);
 ---
 
 <div class="backdrop-blur-md backdrop-saturate-25 p-8 rounded-4xl flex flex-row gap-6 items-center justify-start w-[500px] lg:w-[1000px]">
