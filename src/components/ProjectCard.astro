@@ -12,7 +12,7 @@ const { title, subtitle, favorite, twitter, bluesky, linkedin, github, steam, it
 const icon = FindProjectIcon(title, avatar);
 ---
 
-<div class="backdrop-blur-md backdrop-saturate-25 p-8 rounded-4xl flex flex-row gap-6 items-center justify-start w-[500px] lg:w-[1000px]">
+<div class="p-8 rounded-4xl flex flex-row gap-6 items-center justify-start w-[500px] lg:w-[1000px] relative">
     <a href={url} rel="noopener noreferrer">
         <Image transition:name={`icon-${title}`} class="size-32 rounded-2xl max-w-600px max-h-600px aspect-square transition-all" loading="lazy" alt={`${title} icon`} src={icon} />
     </a>
@@ -35,7 +35,7 @@ const icon = FindProjectIcon(title, avatar);
         />
 
         { favorite &&
-        <div style="position: absolute; top: 2rem; right: 2rem;">
+        <div class="absolute top-8 right-8">
             <Icon name="mdi:star" class="size-8 text-yellow-400 drop-shadow-md" title="Recommended Project"/>
         </div>
         }
