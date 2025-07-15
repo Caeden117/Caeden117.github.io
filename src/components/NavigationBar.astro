@@ -1,11 +1,9 @@
 ---
 import { Image } from 'astro:assets';
 import avatar from '@/images/icon.png';
-
-const routePattern: string = Astro.routePattern;
 ---
 <div class="nav-bar fixed left-0 right-0 z-50 p-4 backdrop-blur-md backdrop-saturate-25 ">
-    <a href={routePattern != "/" ? "/" : undefined} class="flex items-left justify-left gap-2 text-lg font-bold text-shadow-harpy">
+    <a href="/" class="flex items-left justify-left gap-2 text-lg font-bold text-shadow-harpy">
         <Image transition:name="harpy-icon" class="size-8 rounded-full" loading="eager" alt="Harpy icon" src={avatar} />
         Caeden Statia
     </a>

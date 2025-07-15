@@ -14,7 +14,7 @@ const icon = FindProjectIcon(title, avatar);
 
 <div class="backdrop-blur-md backdrop-saturate-25 p-8 rounded-4xl flex flex-row gap-6 items-center justify-start w-[500px] lg:w-[1000px]">
     <a href={url} rel="noopener noreferrer">
-        <Image transition:name={`icon-${title}`} class="size-32 rounded-2xl max-w-600px max-h-600px aspect-square transition-all" loading="eager" alt={`${title} icon`} src={icon} />
+        <Image transition:name={`icon-${title}`} class="size-32 rounded-2xl max-w-600px max-h-600px aspect-square transition-all" loading="lazy" alt={`${title} icon`} src={icon} />
     </a>
     <div class="flex flex-col items-start gap-2">
         <a href={url} rel="noopener noreferrer">
