@@ -4,6 +4,7 @@ title: "ChroMapper"
 subtitle: "An advanced community editor for Beat Saber."
 
 made_with: "unity csharp"
+favorite: true
 
 github: "https://github.com/Caeden117/ChroMapper"
 download: "https://cm.topc.at/dl"

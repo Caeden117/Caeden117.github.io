@@ -7,7 +7,17 @@ import { Image } from 'astro:assets';
 import avatar from '@/images/icon.png';
 import harpy from '@/images/harpy.png';
 
-const projects = Object.values(import.meta.glob('./projects/*.md', { eager: true }));
+// Load all projects and sort them by favorite status and title
+const projects = Object.values(import.meta.glob('./projects/*.md', { eager: true })).sort((a: any, b: any) => {
+	const aFavorite = a.frontmatter.favorite ?? false;
+	const bFavorite = b.frontmatter.favorite ?? false;
+	
+	if (aFavorite !== bFavorite) {
+		return bFavorite - aFavorite;
+	}
+
+	return a.frontmatter.title.localeCompare(b.frontmatter.title);
+});
 ---
 <BaseLayout
 	title="Caeden Statia"

@@ -4,6 +4,7 @@ title: "caeden.dev"
 subtitle: "My personal website and online portfolio."
 
 made_with: "astro typescript tailwind"
+favorite: true
 
 github: "https://github.com/Caeden117/Caeden117.github.io"
 ---

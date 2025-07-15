@@ -3,10 +3,11 @@ import { Image } from 'astro:assets';
 import LinksArea from '@/components/LinksArea.astro';
 import avatar from '@/images/icon.png';
 import FindProjectIcon from '@/scripts/FindProjectIcon';
+import { Icon } from 'astro-icon/components';
 
 const { frontmatter, url } = Astro.props;
 
-const { title, subtitle, twitter, bluesky, linkedin, github, steam, itchdotio, download, other } = frontmatter;
+const { title, subtitle, favorite, twitter, bluesky, linkedin, github, steam, itchdotio, download, other } = frontmatter;
 
 const icon = FindProjectIcon(title, avatar);
 ---
@@ -32,5 +33,11 @@ const icon = FindProjectIcon(title, avatar);
             download={download}
             other={other}
         />
+
+        { favorite &&
+        <div style="position: absolute; top: 2rem; right: 2rem;">
+            <Icon name="mdi:star" class="size-8 text-yellow-400 drop-shadow-md" title="Recommended Project"/>
+        </div>
+        }
     </div>
 </div>

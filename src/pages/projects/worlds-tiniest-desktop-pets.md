@@ -4,6 +4,7 @@ title: "World's Tiniest Desktop Pets"
 subtitle: "Large scale pet simulation for Ludum Dare 56."
 
 made_with: "unity csharp"
+favorite: true
 
 github: "https://github.com/Caeden117/LudumDare56"
 itchdotio: "https://plusonerabbit.itch.io/worlds-tiniest-desktop-pets"
