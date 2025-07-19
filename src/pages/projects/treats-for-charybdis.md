@@ -14,7 +14,7 @@ other: "https://ldjam.com/events/ludum-dare/57/treats-for-charybdis"
 
 [IMAGE STUB: Screenshot of the main game showing being thrown]
 
-Ludum Dare 57 arrived with the theme [STUB: Insert actual LD57 theme], presenting our team with another opportunity to showcase our evolving game development skills and creative problem-solving abilities. After the lessons learned from previous Ludum Dare entries, we approached this jam with refined processes and ambitious creative goals.
+Ludum Dare 57 arrived with the theme *depths*, presenting our team with another opportunity to showcase our evolving game development skills and creative problem-solving abilities. After the lessons learned from previous Ludum Dare entries, we approached this jam with refined processes and ambitious creative goals.
 
 "Treats for Charybdis" emerged from our brainstorming around environmental themes and internet culture, specifically the meme about throwing car batteries into the ocean. We decided to embrace the absurdity through an engaging physics-based game.
 
