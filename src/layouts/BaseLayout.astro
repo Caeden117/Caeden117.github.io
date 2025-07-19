@@ -31,6 +31,12 @@ const { title, subtitle, icon, twitter, bluesky, linkedin, github, steam, itchdo
 		}
 	}
 	
+	// Listen for Astro view transition events to re-apply logic
+	document.addEventListener("astro:page-load", () => {
+		disableScrollEventsIfUnsupported();
+	});
+
+	// Manual call for initial load
 	disableScrollEventsIfUnsupported();
 </script>
 
