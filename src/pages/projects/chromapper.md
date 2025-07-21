@@ -18,8 +18,6 @@ ChroMapper began in February 2019 as a collaborative project between myself and 
 
 The project started as a simple improvement effort but evolved into something far more ambitious—a comprehensive mapping ecosystem that would become the cornerstone of Beat Saber map creation.
 
-[IMAGE STUB: Before/after comparison showing old Beat Saber editors vs ChroMapper's modern interface]
-
 # Technology Stack and Architecture
 
 **Primary Technologies:**

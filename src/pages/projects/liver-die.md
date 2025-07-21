@@ -41,7 +41,7 @@ Liver Die takes a lighthearted approach by incorporating a simple low-poly theme
 **Rationale Behind Technology Choices:**
 Unity was selected for its excellent 3D capabilities and our team's collective expertise with the engine. The new Input System provided the responsiveness needed for the fast-paced "de-livery" gameplay. Our decision to implement procedural generation allowed for replayability within the 72-hour development window.
 
-![Screenshot of Liver Die's hallway generation system open in Visual Studio."](@/images/projects/liver-die/liver-die3.png)
+![Screenshot of Liver Die's hallway generation system open in Visual Studio.](@/images/projects/liver-die/liver-die3.png)
 
 # Technical Challenges and Project Management
 
@@ -85,4 +85,4 @@ Our game jam results were impressive for our 2nd submission. Among 2310 submissi
 **Technical Legacy:**
 The procedural generation system and team coordination workflows developed for Liver Die influenced our approach to subsequent game jam projects. The success of this project established our team as a competent collaborative unit for future creative endeavors.
 
-![Screenshot of Liver Die gameplay."](@/images/projects/liver-die/liver-die4.png)
+![Screenshot of Liver Die gameplay.](@/images/projects/liver-die/liver-die4.png)
