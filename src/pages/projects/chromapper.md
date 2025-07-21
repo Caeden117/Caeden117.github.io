@@ -12,7 +12,7 @@ download: "https://cm.topc.at/dl"
 
 # Development Story and Goals
 
-[IMAGE STUB: Screenshot of ChroMapper's main interface showing the 3D beatmap editor with notes, lighting, and timeline]
+![Screenshot of ChroMapper with the level "Bad Apple" open.](@/images/projects/chromapper/chromapper3.png)
 
 ChroMapper began in February 2019 as a collaborative project between myself and a friend, born from frustration with the existing Beat Saber map editors. The community tools at the time suffered from usability issues and performance limitations that hindered the creative process for mappers. We envisioned creating a superior editor that would not only address these shortcomings but also incorporate cutting-edge features emerging from Beat Saber's vibrant modding community.
 
@@ -30,7 +30,7 @@ The project started as a simple improvement effort but evolved into something fa
 **Rationale Behind Technology Choices:**
 Unity was the natural choice given Beat Saber's foundation and our team's familiarity with the engine. C# provided robust performance for real-time editing operations while maintaining flexibility for our growing open-source community. The decision to implement a comprehensive plugin system using .NET Framework enabled community extensibility without compromising core stability.
 
-[IMAGE STUB: Screenshot of Unity editor showing ChroMapper project structure and key components]
+![Screenshot of ChroMapper's code open in Visual Studio.](@/images/projects/chromapper/chromapper4.png)
 
 # Technical Challenges and Solutions
 
@@ -45,15 +45,11 @@ The most significant challenge was achieving real-time performance with complex 
 - Implemented spatial partitioning for optimized raycasting
 - Fixed many inefficient code paths with better designed, memory and runtime efficient versions
 
-[IMAGE STUB: Performance profiler screenshots showing before/after optimization results]
-
 ## Cross-Platform Compatibility
 Expanding ChroMapper's reach required addressing platform-specific challenges:
 - Achieved compatibility with Chromebooks, Steam Deck, and Android devices
 - Implemented platform-agnostic input systems
 - Developed universal build pipeline supporting Windows, macOS, and Linux
-
-[IMAGE STUB: Screenshot showing ChroMapper running on different platforms (Chromebook, Steam Deck, desktop)]
 
 ## Codebase Management
 As the project grew from a weekend experiment to a multi-year endeavor, maintaining code quality became crucial:
@@ -61,11 +57,11 @@ As the project grew from a weekend experiment to a multi-year endeavor, maintain
 - Implemented a testing suite that is run through Jenkins
 - Created plugin architecture enabling community contributions without core modifications
 
-[IMAGE STUB: Screenshot of code editor showing ChroMapper's codebase with testing framework and plugin architecture]
-
 # Community Impact and Metrics
 
 ChroMapper has achieved remarkable adoption within the Beat Saber community. Shortly after its first Open Beta release, ChroMapper rapidly became the preferred community editor.
+
+![Screenshot of ChroMapper in a multiplayer session with three users.](@/images/projects/chromapper/chromapper2.jpg)
 
 **Community Features:**
 - **Multiplayer Editing** - Revolutionary feature allowing collaborative map creation

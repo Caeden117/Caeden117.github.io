@@ -12,7 +12,7 @@ other: "https://ldjam.com/events/ludum-dare/52/lunaculture"
 
 # Development Story and Goals
 
-[IMAGE STUB: Screenshot of Lunaculture main gameplay showing Dr. Mamon on the lunar surface with farming plots and the colony in the background]
+![Screenshot of Lunaculture's main menu](@/images/projects/lunaculture/lunaculture.png)
 
 Game jams were always something I felt a little intimidated by. With a short amount of time, you are expected to create a complete game with a gameplay loop, passable visuals and audio, playable, and bug free. And most of all, going through the motions of game development within such a short time can get very stressful!
 
@@ -22,7 +22,7 @@ With our team of 3, we set out to create a game jam entry following the theme of
 
 In Lunaculture, you play as Dr. Mamon, tasked to plant and sustain crops for the newly established colony on the moon of Iridium. With weekly quotas to meet, you are slowly given more variety of plants to help satisfy the colony.
 
-[IMAGE STUB: Screenshot showing the weekly objective UI and quota system with different plant types unlocked]
+![Screenshot of Lunaculture's main interface and a sample farm, showing the weekly UI progress.](@/images/projects/lunaculture/lunaculture3.png)
 
 # Technology Stack and Development Approach
 
@@ -40,7 +40,7 @@ In Lunaculture, you play as Dr. Mamon, tasked to plant and sustain crops for the
 **Rationale Behind Technology Choices:**
 Unity was the natural choice given our team's familiarity and the engine's excellent support for rapid iteration. The grid-based approach allowed us to create a structured farming system that was both intuitive for players and manageable to implement within our time constraints. Our focus on modular systems enabled parallel development across team members.
 
-[IMAGE STUB: Screenshot of Unity editor showing the grid-based farming system implementation and component structure]
+![Screenshot of Lunaculture's inventory system open in Visual Studio.](@/images/projects/lunaculture/lunaculture4.png)
 
 # Technical Challenges and Learning Experiences
 
@@ -49,8 +49,6 @@ Having not participated in any game jam, I had to learn time management and sett
 
 **Scope Management Challenges:**
 We needed to learn how to properly scope out features in a game jam entry, and fast. With only 3 days to create our game, shortened by human needs like eating and sleeping, we very quickly needed to cut features in the name of time. Features like oxygen and water management, saving and loading, and even audio (yikes!) had to be scrapped in order to submit the game on time.
-
-[IMAGE STUB: Screenshot or diagram showing cut features vs implemented features, possibly with concept art of oxygen/water systems]
 
 **Technical Implementation Hurdles:**
 - **UI/UX Design** - Creating intuitive interfaces for farming mechanics under time pressure

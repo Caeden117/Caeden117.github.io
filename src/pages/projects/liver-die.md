@@ -12,7 +12,7 @@ other: "https://ldjam.com/events/ludum-dare/53/liver-die"
 
 # Development Story and Goals
 
-[IMAGE STUB: Screenshot of Liver Die gameplay showing the gremlin character in the hospital environment with dialogue UI]
+![Screenshot of Liver Die's opening title animation](@/images/projects/liver-die/liver-die2.png)
 
 The theme was *delivery*. But between me and my group of 8 friends, that theme felt too boring. Delivering... what? Mail? Pizza? Newspapers? Everyone was going to create games about that. The first few hours of the 53rd Ludum Dare game jam was spent thinking of creative spins and takes on the delivery theme.
 
@@ -22,7 +22,7 @@ Instead of delivering any goods or services, we set out to create a game where y
 
 Liver Die takes a lighthearted approach by incorporating a simple low-poly theme and heavy use of our group's humor. This helped the game achieve an enjoyable experience from an otherwise crazy (not to mention gruesome) take on the jam's theme.
 
-[IMAGE STUB: Concept art or early screenshots showing the low-poly hospital aesthetic and character design]
+![Screenshot of Liver Die's humerous conversation - "You want to eat livers?"](@/images/projects/liver-die/liver-die.png)
 
 # Technology Stack and Development Tools
 
@@ -41,7 +41,7 @@ Liver Die takes a lighthearted approach by incorporating a simple low-poly theme
 **Rationale Behind Technology Choices:**
 Unity was selected for its excellent 3D capabilities and our team's collective expertise with the engine. The new Input System provided the responsiveness needed for the fast-paced "de-livery" gameplay. Our decision to implement procedural generation allowed for replayability within the 72-hour development window.
 
-[IMAGE STUB: Screenshot of Unity editor showing the procedural hospital generation system and NPC placement tools]
+![Screenshot of Liver Die's hallway generation system open in Visual Studio."](@/images/projects/liver-die/liver-die3.png)
 
 # Technical Challenges and Project Management
 
@@ -82,7 +82,7 @@ Our game jam results were impressive for our 2nd submission. Among 2310 submissi
 - **24th in Theme** - Recognition for our creative interpretation of "delivery"
 - **11th in Humor** - Validation of our comedic approach to the dark subject matter
 
-[IMAGE STUB: Screenshot of Ludum Dare results page showing Liver Die's rankings and community feedback]
-
 **Technical Legacy:**
-The procedural generation system and team coordination workflows developed for Liver Die influenced our approach to subsequent game jam projects. The success of this project established our team as a competent collaborative unit for future creative endeavors. 
+The procedural generation system and team coordination workflows developed for Liver Die influenced our approach to subsequent game jam projects. The success of this project established our team as a competent collaborative unit for future creative endeavors.
+
+![Screenshot of Liver Die gameplay."](@/images/projects/liver-die/liver-die4.png)

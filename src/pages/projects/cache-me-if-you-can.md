@@ -12,7 +12,7 @@ other: "https://ldjam.com/events/ludum-dare/54/cache-me-if-you-can"
 
 # Development Story and Goals
 
-[IMAGE STUB: Screenshot of Cache Me If You Can gameplay showing virus file destruction mechanics]
+![Image of Cache Me If You Can gameplay.](@/images/projects/cache-me-if-you-can/cmiyc.png)
 
 With the successes of past Ludum Dare projects Lunaculture and Liver Die, my ragtag group of developer friends felt confident heading into the 54th Ludum Dare game jam. While past Ludum Dares presented challenges and stress, with two game jams already under our belt, we felt confident in our ability to produce a stand-out game.
 
@@ -21,8 +21,6 @@ Besides, our team had 8 people. What could possibly go wrong?
 Haha...
 
 Suffice to say, this Ludum Dare jam was a harsh reminder of the realities of game development. We ran into a lot of problems, panics, and stress; the fact we were able to finish this game on-time should be considered lucky. Nonetheless, this jam was extremely valuable experience, even if the moment-to-moment experience wasn't as good as our previous entries.
-
-[IMAGE STUB: Team communication screenshots or Discord chat logs showing the collaborative challenges during development]
 
 # Technology Stack and Tools
 
@@ -35,7 +33,7 @@ Suffice to say, this Ludum Dare jam was a harsh reminder of the realities of gam
 **Rationale Behind Technology Choices:**
 Unity was chosen for its rapid prototyping capabilities and our team's collective familiarity with the engine. C# provided the flexibility needed for quick iteration during the time-constrained jam environment. The decision to use Git for version control proved crucial for managing work across our large team, though coordination challenges emerged as the project progressed.
 
-[IMAGE STUB: Screenshot of Unity editor showing the hallway and room system that was completed in the final 24 hours]
+![Image showing code from Cache Me If You Can's codebase.](@/images/projects/cache-me-if-you-can/cmiyc3.png)
 
 # Technical Challenges and Growing Pains
 
@@ -75,3 +73,6 @@ While I'm happy we were able to complete our entry on time, and didn't score too
 
 **Long-term Value:**
 Despite the stressful development process, Cache Me If You Can served as a valuable learning experience in project management, team coordination, and the importance of maintaining realistic scope under pressure. The lessons learned from this challenging jam informed our approach to subsequent collaborative projects. 
+
+
+![Game over screen.](@/images/projects/cache-me-if-you-can/cmiyc4.png)

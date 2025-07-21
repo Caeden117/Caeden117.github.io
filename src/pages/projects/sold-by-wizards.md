@@ -12,7 +12,7 @@ other: "https://ldjam.com/events/ludum-dare/55/sold-by-wizards"
 
 # Development Story and Goals
 
-[IMAGE STUB: Screenshot of Sold By Wizards main gameplay showing wizard character with portal interface and dimensional item collection]
+![Screenshot of Sold By Wizard's main tower, with a portal open to another dimension](@/images/projects/sold-by-wizards/soldbywizards.png)
 
 In the 55th Ludum Dare game jam, we returned to our roots. Only three people - myself, Bobbie and Rabbit - participated this time around.
 
@@ -20,9 +20,9 @@ The theme was *summoning*. Like with our previous entry Liver Die, we wanted to 
 
 This time around, our minds resorted to dropshipping - the practice of selling items without keeping stock. And so, our game idea was hatched: As a wizard in need to make rent, you summon portals to different dimensions, stealing items to dropship them on a magical online supply store.
 
-[IMAGE STUB: Screenshot of the magical online store interface showing items acquired from different dimensions]
-
 # Technology Stack and Refined Development Process
+
+![Screenshot of Sold By Wizard's inventory system open in JetBrains Rider.](@/images/projects/sold-by-wizards/soldbywizards2.png)
 
 **Primary Technologies:**
 - **Unity** - Game engine for rapid prototyping and cross-platform deployment
@@ -53,12 +53,14 @@ We had our game idea within the first two hours, finished the game loop with hal
 - **Advanced Lighting Techniques** - Experimented with baked lighting on dynamically loaded maps
 - **Performance Optimization** - Maintained 60fps on the web even with complex portal rendering
 
-[IMAGE STUB: Screenshot demonstrating the portal effect that obscures content on the far side, showing technical achievement]
+![Screenshot of a level in Sold By Wizards, viewing the same portal as seen from the Wizard's tower from the other side. The Wizard tower is completely hidden, with the only visible portion being through the portal.](@/images/projects/sold-by-wizards/soldbywizards3.png)
 
 **Last-Minute Technical Drama:**
 The only panic moment to mention was at the very end; with one hour to submit our game after the deadline, we decided to enable link-time optimization (LTO) in our WebGL build. Little did we know, this ballooned compile times from a few minutes to... about 43 minutes. Suffice to say, we weren't sure we'd be able to submit in time, but we're very thankful that the build finished in time to submit.
 
 # Lessons Learned and Technical Mastery
+
+![Screenshot of another level in Sold By Wizards, showing the beautiful level design in play.](@/images/projects/sold-by-wizards/soldbywizards1.jpg)
 
 **Scope Management Mastery:**
 Sold By Wizards has got to be the most polished game jam entry I've ever helped create. Not only is the gameplay solid and refined, we also had the time to play with advanced graphical techniques, from trying out baked lighting on dynamically loaded maps to a portal effect that obscured the wizard tower on the other side.
@@ -84,11 +86,6 @@ Sold By Wizards has got to be the most polished game jam entry I've ever helped 
 
 **Commercial Considerations:**
 My team is currently considering pursuing Sold By Wizards as a commercial project, and looking into what ideas we might want to incorporate into a fully fledged game. It will certainly be a large commitment, but with how solid the game is as a Ludum Dare entry, I think it's the closest we've ever gotten to a commercially ready product.
-
-**Future Development Plans:**
-- [STUB: Insert expanded feature concepts for commercial version]
-- [STUB: Insert market research and target audience analysis]
-- [STUB: Insert technical requirements for full game development]
 
 **Legacy and Technical Innovation:**
 Sold By Wizards represents the culmination of our game jam experience, showcasing advanced technical implementation while maintaining the rapid development pace that makes game jams exciting. The portal technology and modular systems developed for this project have potential applications in larger commercial projects. 
