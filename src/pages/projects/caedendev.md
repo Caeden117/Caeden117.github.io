@@ -11,19 +11,17 @@ github: "https://github.com/Caeden117/Caeden117.github.io"
 
 # Development Story and Goals
 
-[IMAGE STUB: Screenshot of the finished website homepage showing modern design and navigation]
-
 Creating a personal website and portfolio has always been on my developer todo list. After years of using a previous website written in raw HTML and CSS, I decided it was time to build something that truly represented my work and technical capabilities.
+
+![Comparison image of my current website (left) and older portfolio website (right)](@/images/projects/caedendev/evolution.png)
 
 The goal was to create a modern, fast, and maintainable portfolio website that could serve as both a showcase for my projects and a demonstration of my front-end development skills. I wanted something that would be easy to update, performant across all devices, and reflect current web development best practices.
 
 This website serves as the central hub for my professional presence online, housing detailed project descriptions, technical insights, and contact information for potential collaborators and employers.
 
-[IMAGE STUB: Before/after comparison showing old simple HTML template vs new Astro-based design]
-
 # Technology Stack and Architecture
 
-[IMAGE STUB: Screenshot of VS Code showing the Astro project structure and component files]
+![Visual Studio Code screenshot showcasing a project file and the Astro project structure](@/images/projects/caedendev/code.png)
 
 **Primary Technologies:**
 - **Astro** - Modern static site generator with component-based architecture
@@ -35,8 +33,6 @@ This website serves as the central hub for my professional presence online, hous
 - **GitHub Pages** - Static hosting with custom domain support
 - **GitHub Actions** - Automated deployment pipeline
 - **VS Code** - Development environment with extensions for Astro, TypeScript, and more.
-
-[IMAGE STUB: Screenshot of browser dev tools showing Lighthouse performance scores (90+ across all metrics)]
 
 **Rationale Behind Technology Choices:**
 Astro was chosen for its excellent performance characteristics, developer experience, and support for GitHub Pages deployment. Its components architecture allows for rapid iteration of reusable elements, making an advanced website come together through small pieces. TypeScript provides better code quality and IDE support, while Tailwind CSS enables rapid UI development without writing custom CSS, although some custom CSS was still used for advanced effects.

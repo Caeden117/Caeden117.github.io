@@ -31,6 +31,12 @@ const icon = FindProjectIcon(title, avatar);
 </BaseLayout>
 
 <style is:global>
+    img:not(.markdown-ignore) {
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 1rem 0;
+    }
+
     h1:not(.markdown-ignore) {
         font-size: 2.25rem;
         line-height: calc(2.5 / 2.25);

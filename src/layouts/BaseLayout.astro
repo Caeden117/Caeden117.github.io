@@ -52,7 +52,7 @@ const { title, subtitle, icon, twitter, bluesky, linkedin, github, steam, itchdo
 			<NavigationBar/>
 
 			<div class="contact-card fixed top-1/2 left-1/2 -translate-1/2 rounded-xl flex flex-row items-center justify-center gap-8">
-				{icon && <Image transition:name={`icon-${title}`} class="size-64 rounded-full max-w-600px max-h-600px aspect-square transition-all" loading="eager" alt="Harpy avatar :>" src={icon} /> }
+				{icon && <Image transition:name={`icon-${title}`} class="size-64 rounded-full max-w-600px max-h-600px aspect-square transition-all markdown-ignore" loading="eager" alt="Harpy avatar :>" src={icon} /> }
 				<div class="flex flex-col items-start gap-4">
 					<h1 class="text-4xl font-bold text-shadow-harpy markdown-ignore">{title}</h1>
 					<slot name="contact-card-extra"/>
