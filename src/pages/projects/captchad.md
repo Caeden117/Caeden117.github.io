@@ -12,7 +12,7 @@ other: "https://devpost.com/software/captcha-d-d1g2v3"
 
 # Development Story and Goals
 
-[IMAGE STUB: Screenshot of the main CaptchaD interface showing a parody CAPTCHA puzzle with WarioWare-style timer]
+![Screenshot of the intermission animation in Captcha'd, showing you as a human prisoner with two lives left in front of a static monitor.](@/images/projects/captchad/captchad1.png)
 
 UHackathon 2025 presented a unique opportunity to combine humor with technology in a competitive hackathon environment. The challenge was to create something that would stand out among the numerous projects within a super constrained 6 hour timeframe.
 
@@ -20,11 +20,11 @@ Envisioning a game for the Fun track, Captcha'd emerged from our observation of 
 
 Our goal was to create a satirical take on modern internet security measures while providing genuinely engaging gameplay that would keep players coming back for more challenges and higher scores.
 
-[IMAGE STUB: Collage showing various real CAPTCHA examples that inspired the game mechanics]
+![Picture of the development team working on Catcha'd during the hackathon hours.](@/images/projects/captchad/captchad6.jpg)
 
 # Technology Stack and Rapid Development
 
-[IMAGE STUB: Screenshot of Godot editor showing the mini-game scene structure and CAPTCHA challenge nodes]
+![Screenshot of a microgame inside Captcha'd.](@/images/projects/captchad/captchad3.png)
 
 **Primary Technologies:**
 - **Godot Engine** - Selected for rapid prototyping and excellent 2D game development tools
@@ -41,6 +41,8 @@ Our goal was to create a satirical take on modern internet security measures whi
 Godot was chosen for its exceptional rapid development capabilities and built-in tools that allowed us to iterate quickly during the hackathon timeframe. The engine's node system made it easy to create microgames that could be developed in parallel by team members.
 
 # Technical Challenges and Creative Solutions
+
+![Picture of the myself hard at work on a microgame for Captcha'd.](@/images/projects/captchad/captchad7.jpg)
 
 **Microgames:**
 - **Challenge Diversification** - Creating multiple distinct gameplay mechanics within time constraints
@@ -80,7 +82,7 @@ Participating in UHackathon 2025 reinforced the importance of clear communicatio
 **Hackathon Performance:**
 Captcha'd successfully won the fun track in UHackathon 2025. Our team was rewarded with tote bags filled with merchandise from the University of Washington.
 
-[IMAGE STUB: Winner]
+![Picture of the development team holding their winning tote bags.](@/images/projects/captchad/captchad5.jpg)
 
 **Educational Value:**
 Captcha'd serves as an example of how everyday technological frustrations can be transformed into entertaining experiences through creative game design. The project demonstrates the potential for humor and satire in technology education and user experience design.

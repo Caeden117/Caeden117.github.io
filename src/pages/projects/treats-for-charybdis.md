@@ -12,7 +12,7 @@ other: "https://ldjam.com/events/ludum-dare/57/treats-for-charybdis"
 
 # Development Story and Goals
 
-[IMAGE STUB: Screenshot of the main game showing being thrown]
+![Screenshot of the logo for Treats for Charybdis.](@/images/projects/treats-for-charybdis/treats-for-charybdis.png)
 
 Ludum Dare 57 arrived with the theme *depths*, presenting our team with another opportunity to showcase our evolving game development skills and creative problem-solving abilities. After the lessons learned from previous Ludum Dare entries, we approached this jam with refined processes and ambitious creative goals.
 
@@ -20,7 +20,7 @@ Ludum Dare 57 arrived with the theme *depths*, presenting our team with another 
 
 # Technology Stack and Technical Evolution
 
-[IMAGE STUB: Screenshot of Godot editor showing the ocean physics simulation and battery throwing mechanics]
+![Screenshot of the player in the swinging minigame before throwing a car battery into the ocean.](@/images/projects/treats-for-charybdis/treats-for-charybdis2.jpg)
 
 **Primary Technologies:**
 - **Godot Engine** - Continued use of our preferred engine for 2D/3D hybrid development
@@ -43,6 +43,8 @@ Building on our previous Godot experience, we focused on pushing the engine's ph
 
 # Lessons Learned and Technical Growth
 
+![Screenshot of the car battery underwater, showing advanced rendering and physics techniques.](@/images/projects/treats-for-charybdis/treats-for-charybdis4.jpg)
+
 **Physics Programming:**
 Developing Treats for Charybdis provided deep experience with physics programming and environmental simulation. Working with Godot's physics engine taught valuable lessons about optimization, realistic object behavior, and creating satisfying player feedback through mechanical design.
 
@@ -53,6 +55,8 @@ Developing Treats for Charybdis provided deep experience with physics programmin
 - Better coordination of visual and mechanical design elements
 
 # Project Impact and Jam Results
+
+![Screenshot of the end results screen.](@/images/projects/treats-for-charybdis/treats-for-charybdis6.png)
 
 **Jam Results:**
 - **397th Overall**
