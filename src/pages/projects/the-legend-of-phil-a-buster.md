@@ -12,7 +12,7 @@ itchdotio: "https://mykoala.itch.io/philbuster"
 
 # Development Story and Goals
 
-[IMAGE STUB: Screenshot of main gameplay showing deckbuilding interface with mad-lib text generation in progress]
+![Screenshot of the title screen of The Legend of Phil A Buster](@/images/projects/the-legend-of-phil-a-buster/philbuster4.png)
 
 I was fortunate enough to participate in the second Tri-Campus Game Jam hosted by the University of Washington. This jam presented an exciting challenge: create an innovative game that would showcase our team's creativity and technical skills within the academic game development community. The theme of *delay the inevitable* and constraints of the jam pushed us to explore unusual game mechanics and narrative approaches.
 
@@ -20,7 +20,8 @@ The Legend of Phil A. Buster emerged from our desire to combine two seemingly in
 
 Our goal was to create a game that would surprise players with its unique approach to familiar genres while demonstrating innovative design thinking and technical execution within the jam's timeframe.
 
-[IMAGE STUB: Early concept sketches or design documents showing the fusion of deckbuilding and mad-lib mechanics]
+
+![Animated graphic showing the titular Phil Buster reading off a sentence crafted by the player.](@/images/projects/the-legend-of-phil-a-buster/philbuster.gif)
 
 # Technology Stack and Innovation Focus
 
@@ -38,7 +39,7 @@ Our goal was to create a game that would surprise players with its unique approa
 **Rationale Behind Technology Choices:**
 Godot's flexible architecture made it ideal for experimenting with novel game mechanics that don't fit traditional genre templates. The engine's scene system allowed us to create modular components that could be combined in unexpected ways, supporting our experimental approach to game design.
 
-[IMAGE STUB: Screenshot of Godot editor showing node structure for the mad-lib and deckbuilding systems integration]
+![Animated graphic showing the player purchasing cards from the game's shop.](@/images/projects/the-legend-of-phil-a-buster/philbuster2.gif)
 
 # Technical Challenges and Creative Innovation
 
@@ -60,7 +61,7 @@ Godot's flexible architecture made it ideal for experimenting with novel game me
 - **Technical Demonstration** - Showcasing programming skills while maintaining player focus
 - **Collaborative Coordination** - Managing complex systems development across team members
 
-[IMAGE STUB: Screenshot showing dynamic text generation system in action with cards affecting narrative choices]
+![Screenshot of a nonsensical sentence by a player - "The [government] is taking over. We must [kill] immediately!"](@/images/projects/the-legend-of-phil-a-buster/philbuster3.png)
 
 # Lessons Learned and Design Innovation
 
@@ -81,20 +82,9 @@ Developing The Legend of Phil A. Buster taught valuable lessons about pushing ge
 
 # Project Impact and Competition Results
 
-**UW Tri-Campus Game Jam Performance:**
-- [STUB: Insert final ranking and category awards]
-- [STUB: Insert judge feedback on innovation and technical execution]
-- [STUB: Insert peer recognition and community response]
+![Picture of the development team for The Legend of Phil A Buster.](@/images/projects/the-legend-of-phil-a-buster/philbuster7.jpg)
 
-**Innovation Recognition:**
-- [STUB: Insert specific recognition for unique genre combination]
-- [STUB: Insert technical achievements highlighted by organizers]
-- [STUB: Insert academic community response to experimental design]
-
-**Post-Jam Development:**
-- [STUB: Insert continued development or refinement plans]
-- [STUB: Insert potential for academic research or publication]
-- [STUB: Insert influence on subsequent experimental game projects]
+The Legend of Phil A. Buster won the 2nd Tri-Campus Game Jam overall to very positive reception from everyone involved.
 
 **Educational Impact:**
 The success of The Legend of Phil A. Buster demonstrates the value of experimental thinking in game design and the potential for academic game jams to foster genuine innovation. The project serves as an example of how traditional game genres can be reimagined through creative mechanical fusion.

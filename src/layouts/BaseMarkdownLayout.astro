@@ -25,7 +25,7 @@ const icon = FindProjectIcon(title, avatar);
 >
     <MadeWithArea made_with={made_with} slot="contact-card-extra"/>
 
-    <div class="backdrop-blur-md backdrop-saturate-25 p-8 rounded-4xl w-[500px] lg:w-[1000px] gap-4 flex flex-col">
+    <div class="backdrop-brightness-90 p-8 rounded-4xl w-[500px] lg:w-[1000px] gap-4 flex flex-col">
         <slot/>
     </div>
 </BaseLayout>
@@ -35,6 +35,7 @@ const icon = FindProjectIcon(title, avatar);
         border-radius: 0.5rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         margin: 1rem 0;
+        align-self: center;
     }
 
     h1:not(.markdown-ignore) {

@@ -13,7 +13,7 @@ other: "https://ldjam.com/events/ludum-dare/56/worlds-tiniest-desktop-pets"
 
 # Development Story and Goals
 
-[IMAGE STUB: Screenshot of the main simulation showing hundreds of tiny pets with different behaviors across a large environment]
+![Animated graphic of a few desktop pets, showing various moods and emotions.](@/images/projects/worlds-tiniest-desktop-pets/wtdp.gif)
 
 Ludum Dare 56 presented the theme "Tiny Creatures," which immediately sparked our team's imagination around miniaturization and scale. After several successful collaborative game jams, we wanted to tackle something technically ambitious while maintaining the accessibility and charm that made our previous entries successful.
 
@@ -21,11 +21,10 @@ World's Tiniest Desktop Pets emerged from our exploration of the virtual pet gen
 
 Our goal was to create a relaxing yet engaging experience that would showcase advanced simulation programming while providing the addictive progression mechanics that make virtual pet games compelling.
 
-[IMAGE STUB: Collage showing classic desktop pets from the 90s that inspired this project (eSheep, Neko, etc.)]
 
 # Technology Stack and Simulation Architecture
 
-[IMAGE STUB: Screenshot of Unity editor showing the entity component system and performance optimization settings for large-scale simulation]
+![Animated graphic of pets eating the logo to World's Tiniest Desktop Pets.](@/images/projects/worlds-tiniest-desktop-pets/wtdp2.gif)
 
 **Primary Technologies:**
 - **Unity** - Game engine chosen for its excellent performance optimization and desktop integration capabilities
@@ -41,6 +40,8 @@ Our goal was to create a relaxing yet engaging experience that would showcase ad
 Unity was selected for its maturity and desktop integration capabilities. The engine's Compute Shader system allowed us to handle large-scale simulations efficiently, while C# provided the structure needed for set-up, tear down, and other systems which couldn't be done on the GPU.
 
 # Technical Challenges and Simulation Complexity
+
+![Animated graphic of pets affection growing based on proximity to the mouse cursor.](@/images/projects/worlds-tiniest-desktop-pets/wtdp4.gif)
 
 **Large-Scale Entity Management:**
 - **Performance Optimization** - Maintaining 60fps with millions of active pet entities
@@ -68,6 +69,8 @@ Developing World's Tiniest Desktop Pets provided intensive experience with perfo
 - Experience with desktop application development beyond traditional games
 
 # Project Impact and Jam Results
+
+![Animated graphic of hundreds of desktop pets movine around and jumping off of a File Explorer window.](@/images/projects/worlds-tiniest-desktop-pets/wtdp5.gif)
 
 **Jam Results:**
 - **85th Overall** for my current highest ranked game ever in Ludum Dare
