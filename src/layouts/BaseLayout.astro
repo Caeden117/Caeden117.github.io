@@ -5,6 +5,7 @@ import LinksArea from '@/components/LinksArea.astro';
 import NavigationBar from '@/components/NavigationBar.astro';
 
 import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
 
 const { title, subtitle, icon, twitter, bluesky, linkedin, github, steam, itchdotio, download, other } = Astro.props;
 ---
@@ -68,6 +69,8 @@ const { title, subtitle, icon, twitter, bluesky, linkedin, github, steam, itchdo
 					/>
 				</div>
 			</div>
+
+			<Icon name="mdi:keyboard-arrow-down" class="size-32 text-(--icon-light) dark:text-(--icon-dark) hover:text-black dark:hover:text-white transition-colors fixed bottom-25 left-1/2 -translate-x-1/2 contact-card down-arrow" />
 		</div>
 
 		<div class="flex flex-col items-center justify-center gap-32 pt-8 mb-64">

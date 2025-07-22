@@ -110,10 +110,26 @@
   }
 }
 
+@keyframes downArrowAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .fade-with-scroll {
     animation: scrollAnimation linear;
     animation-fill-mode: forwards;
     animation-timeline: view();
+}
+
+.down-arrow {
+    animation: downArrowAnimation 2s infinite;
 }
 
 .contact-card {
