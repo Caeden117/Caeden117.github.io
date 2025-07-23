@@ -1,10 +1,32 @@
 ---
 import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
+
 import avatar from '@/images/icon.png';
 ---
+<script is:inline>
+    function toggleDarkMode() {
+        localStorage.theme = localStorage.theme === "dark" ? "light" : "dark";
+        document.documentElement.classList.toggle("dark", localStorage.theme === "dark");
+    }
+
+    document.addEventListener("astro:page-load", () => {
+        document.documentElement.classList.toggle("dark", localStorage.theme === "dark");
+    });
+</script>
+
 <div class="nav-bar fixed left-0 right-0 z-50 p-4 backdrop-blur-md backdrop-saturate-25 ">
-    <a href="/" class="flex items-left justify-left gap-2 text-lg font-bold text-shadow-harpy">
+    <a href="/" class="flex items-center justify-left gap-2 text-lg font-bold text-shadow-harpy">
         <Image transition:name="harpy-icon" class="size-8 rounded-full markdown-ignore" loading="eager" alt="Harpy icon" src={avatar} />
         Caeden Statia
     </a>
+
+    <button
+        class="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center size-10 rounded-full bg-transparent display:none transition-colors"
+        aria-label="Toggle dark mode"
+        onclick="toggleDarkMode()"
+    >
+        <Icon name="mdi:moon-and-stars" class="size-8 dark:hidden" />
+        <Icon name="mdi:white-balance-sunny" class="size-8 hidden dark:block" />
+    </button>
 </div>
