@@ -70,18 +70,11 @@ const { title, subtitle, icon, twitter, bluesky, linkedin, github, steam, itchdo
 				</div>
 			</div>
 
-			<Icon name="mdi:keyboard-arrow-down" class="size-32 text-(--icon-light) dark:text-(--icon-dark) hover:text-black dark:hover:text-white transition-colors fixed bottom-25 left-1/2 -translate-x-1/2 contact-card down-arrow" />
+			<Icon name="mdi:keyboard-arrow-down" class="size-32 text-(--icon-light) dark:text-(--icon-dark) transition-colors fixed bottom-25 left-1/2 -translate-x-1/2 contact-card down-arrow" />
 		</div>
 
 		<div class="flex flex-col items-center justify-center gap-32 pt-8 mb-64">
 			<slot/>
-
-			<Panel title="Under Construction." color="255,204,0" ring={true}>
-				<p>Hi! Welcome to my new website.</p>
-				<p>My previous website had been in use since 2020, and while it served me well, I needed a fresh start.<br>It was built using raw HTML and CSS, which was really restrictive. Furthermore, adding new projects was a pain.</p>
-				<p>This new website is built using modern web technologies, and will allow me to easily showcase my work in a more efficient manner.</p>
-				<p>Pardon the dust. Soon, you'll see this website populated with projects old and new.</p>
-			</Panel>
 		</div>
 	</body>
 </html>
