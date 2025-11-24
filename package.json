@@ -13,7 +13,7 @@
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/simple-icons": "^1.2.42",
     "@tailwindcss/vite": "^4.1.7",
-    "astro": "^5.15.6",
+    "astro": "^5.15.9",
     "astro-icon": "^1.1.5",
     "devicon": "^2.16.0",
     "lodash-es": "^4.17.21",
