@@ -3,6 +3,8 @@ import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
 
 import avatar from '@/images/icon.png';
+
+const { nav_items } = Astro.props;
 ---
 <script is:inline>
     function toggleDarkMode() {
@@ -16,10 +18,21 @@ import avatar from '@/images/icon.png';
 </script>
 
 <div class="nav-bar fixed left-0 right-0 z-50 p-4 backdrop-blur-md backdrop-saturate-25 ">
-    <a href="/" class="flex items-center justify-left gap-2 text-lg font-bold text-shadow-harpy">
+    <div class="flex items-center justify-left gap-2 text-lg font-bold text-shadow-harpy">
         <Image transition:name="harpy-icon" class="size-8 rounded-full markdown-ignore" loading="eager" alt="Harpy icon" src={avatar} />
-        Caeden Statia
-    </a>
+        <a href="/">
+            Caeden Statia
+        </a>
+
+        {
+            nav_items && nav_items.map((item: any) => (
+                <div>/</div>
+                <a href={item.href}>
+                    {item.name}
+                </a>
+            ))
+        }
+    </div>
 
     <button
         class="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center size-10 rounded-full bg-transparent display:none transition-colors"

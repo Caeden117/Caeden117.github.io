@@ -23,11 +23,13 @@ const toolToIconSet: Record<string, string> = {
     tailwind: 'mdi'
 };
 
-const { made_with } = Astro.props;
-const technologies: string[] = made_with.split(' ');
+const { made_with, subtitle } = Astro.props;
+const technologies: string[] = made_with ? made_with.split(' ') : [];
 ---
 <div class="flex items-center gap-3">
-    <h2 class="text-xl markdown-ignore text-nowrap">Made with</h2>
+    <h2 class="text-xl markdown-ignore text-nowrap">
+        { made_with ? "Made with:" : subtitle }
+    </h2>
     {technologies.map((tech: string) =>
 
         <Icon name={`${toolToIconSet[tech] || 'devicon-plain'}:${tech}`} class={`size-6 text-(--icon-light) dark:text-(--icon-dark) hover:text-[${toolToColor[tech]}] transition-colors`} />

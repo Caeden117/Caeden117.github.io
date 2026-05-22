@@ -6,7 +6,13 @@ import FindProjectIcon from '@/scripts/FindProjectIcon';
 
 const { frontmatter } = Astro.props;
 
-const { title, subtitle, made_with, twitter, bluesky, linkedin, github, steam, itchdotio, download, other } = frontmatter;
+const { title, subtitle, made_with, twitter, bluesky, linkedin, github, steam, itchdotio, download, parentnav_name, parentnav_href, other } = frontmatter;
+
+// the .filter(Boolean) to remove nulls is CURSED and i HATE IT.
+const nav_items = [
+    parentnav_name == null ? null : { name: parentnav_name, href: parentnav_href },
+    { name: title, href: `/projects/${Astro.props.url.split('/').slice(-1)[0].replace('.md', '')}` }
+].filter(Boolean);
 
 const icon = FindProjectIcon(title, avatar);
 ---
@@ -22,8 +28,9 @@ const icon = FindProjectIcon(title, avatar);
     itchdotio={itchdotio}
     download={download}
     other={other}
+    nav_items={nav_items}
 >
-    <MadeWithArea made_with={made_with} slot="contact-card-extra"/>
+    <MadeWithArea made_with={made_with} subtitle={subtitle} slot="contact-card-extra"/>
 
     <div class="backdrop-brightness-90 p-8 rounded-4xl max-w-[1000px] gap-4 flex flex-col">
         <slot/>

@@ -7,7 +7,7 @@ import NavigationBar from '@/components/NavigationBar.astro';
 import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
 
-const { title, subtitle, icon, twitter, bluesky, linkedin, github, steam, itchdotio, download, other } = Astro.props;
+const { title, subtitle, icon, twitter, bluesky, linkedin, github, steam, itchdotio, download, other, nav_items } = Astro.props;
 ---
 
 <script>
@@ -50,7 +50,7 @@ const { title, subtitle, icon, twitter, bluesky, linkedin, github, steam, itchdo
 		<!--Contact card-->
         <!--Should I abstract this into a component?-->
 		<div class="h-screen w-0 fade-with-scroll">
-			<NavigationBar/>
+			<NavigationBar nav_items={nav_items}/>
 
 			<div class="contact-card fixed top-1/2 left-1/2 -translate-1/2 rounded-xl flex flex-row items-center justify-center gap-8">
 				{icon && <Image transition:name={`icon-${title}`} class="size-32 lg:size-64 rounded-full max-w-600px max-h-600px aspect-square transition-all markdown-ignore shrink-0" loading="eager" alt="Harpy avatar :>" src={icon} /> }

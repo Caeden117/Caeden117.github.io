@@ -154,3 +154,15 @@
     transform: translateY(var(--nav-bar-transform-y));
     pointer-events: var(--nav-bar-pointer-events);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
