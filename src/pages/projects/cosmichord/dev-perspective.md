@@ -4,7 +4,7 @@ title: "Developer's Perspective"
 subtitle: "A behind-the-scenes look and technical breakdown of CosmiChord."
 
 parentnav_name: "CosmiChord"
-parentnav_href: "../cosmichord"
+parentnav_href: "/projects/cosmichord"
 
 under_construction: true
 ---
