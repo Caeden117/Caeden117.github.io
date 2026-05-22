@@ -5,6 +5,8 @@ subtitle: "A virtual reality rhythm game and level editor. My capstone project a
 
 made_with: "unity csharp"
 favorite: true
+
+under_construction: true
 ---
 
 # Introduction

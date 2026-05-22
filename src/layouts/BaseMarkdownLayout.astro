@@ -1,12 +1,13 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import MadeWithArea from '@/components/MadeWithArea.astro';
+import Panel from '@/components/Panel.astro';
 import avatar from '@/images/icon.png';
 import FindProjectIcon from '@/scripts/FindProjectIcon';
 
 const { frontmatter } = Astro.props;
 
-const { title, subtitle, made_with, twitter, bluesky, linkedin, github, steam, itchdotio, download, parentnav_name, parentnav_href, other } = frontmatter;
+const { title, subtitle, made_with, twitter, bluesky, linkedin, github, steam, itchdotio, download, parentnav_name, parentnav_href, under_construction, other } = frontmatter;
 
 // the .filter(Boolean) to remove nulls is CURSED and i HATE IT.
 const nav_items = [
@@ -31,6 +32,14 @@ const icon = FindProjectIcon(title, avatar);
     nav_items={nav_items}
 >
     <MadeWithArea made_with={made_with} subtitle={subtitle} slot="contact-card-extra"/>
+
+    {
+        under_construction &&
+        <Panel title="Under Construction" ring="true" color="255,204,0">
+            This page is currently under construction! Some information may be missing or incomplete, and the design or page layout may not be final.
+            Check back later for updates!
+        </Panel>
+    }
 
     <div class="backdrop-brightness-90 p-8 rounded-4xl max-w-[1000px] gap-4 flex flex-col">
         <slot/>

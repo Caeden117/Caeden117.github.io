@@ -5,6 +5,8 @@ subtitle: "Why you should care about CosmiChord and my capstone."
 
 parentnav_name: "CosmiChord"
 parentnav_href: "../cosmichord"
+
+under_construction: true
 ---
 
 # Introduction

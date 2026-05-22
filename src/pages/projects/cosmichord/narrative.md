@@ -5,6 +5,8 @@ subtitle: "My personal journey of the development of CosmiChord, including its i
 
 parentnav_name: "CosmiChord"
 parentnav_href: "../cosmichord"
+
+under_construction: true
 ---
 
 # Introduction
