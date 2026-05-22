@@ -17,14 +17,14 @@ This is because CosmiChord is my capstone project at the University of Washingto
 
 Here are some quick navigation links to help you jump to various sections of this project.
 
-# [__Your Perpsective__](cosmichord/your-perspective)
+# [__Your Perpsective__](/projects/cosmichord/your-perspective)
 
 This section goes into detail of the user-side of CosmiChord. In other words, why should *you* specifically care about CosmiChord, whether as a commercial product, or as my capstone project.
 
-# [__Developer's Perspective__](cosmichord/dev-perspective)
+# [__Developer's Perspective__](/projects/cosmichord/dev-perspective)
 
 This section dives into the behind-the-scenes and technical breakdown of CosmiChord. Various internal details will be shared about the game, since the code is largely the bread and butter of my work on this project.
 
-# [__Capstone Narrative__](cosmichord/narrative)
+# [__Capstone Narrative__](/projects/cosmichord/narrative)
 
 This section tells the complete story on CosmiChord, how it become my capstone project for the University, and the journey I took during the capstone to bring it into a finalized state.
