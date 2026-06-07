@@ -17,7 +17,7 @@ This is because CosmiChord is my capstone project at the University of Washingto
 
 Here are some quick navigation links to help you jump to various sections of this project.
 
-# [__Your Perpsective__](/projects/cosmichord/your-perspective)
+# [__User's Perspective__](/projects/cosmichord/your-perspective)
 
 This section goes into detail of the user-side of CosmiChord. In other words, why should *you* specifically care about CosmiChord, whether as a commercial product, or as my capstone project.
 
